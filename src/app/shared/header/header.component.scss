@@ -1,0 +1,21 @@
+section {
+    height: 100px;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px 64px;
+    >img {
+        width: 200px;
+    }
+    >nav {
+        display: flex;
+        gap: 24px;
+        >a {
+            &:hover {
+                color: #70E61C;
+            }
+        }
+    }
+
+}

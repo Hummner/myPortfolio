@@ -11,11 +11,11 @@ section {
     >nav {
         display: flex;
         gap: 24px;
-        >a {
-            &:hover {
-                color: #70E61C;
-            }
-        }
     }
 
+}
+
+a.active {
+  color: #70E61C;
+  border-bottom: 3px solid #9747FF;
 }

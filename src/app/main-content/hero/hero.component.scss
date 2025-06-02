@@ -9,10 +9,7 @@
     right: 100px;
     top: 300px;
 
-    >h1 {
-        font-size: 54px;
-        font-weight: 700;
-    }
+    
 
     >h2 {
         color: #9747FF;
@@ -63,15 +60,24 @@
         position: relative;
     }
 
-    .person-background {
+    
+}
+
+.person-background {
 
         z-index: 0;
         position: absolute;
-        height: 600px;
-        width: 800px;
-        left: -140px;
-        top: 90px
+        left: 0;
+        top: 300px;
+        width: 700px;
     }
+
+.photo-arm {
+  position: absolute;
+    top: 190px;
+    width: 500px;
+    z-index: 3;
+    left: 100px;
 }
 
 .person {
@@ -129,6 +135,11 @@ section {
     display: flex;
     gap: 24px;
     align-items: center;
+    >p {
+        color: white;
+        margin-left: 100px;
+        font-size: 24px;
+    }
 }
 
 

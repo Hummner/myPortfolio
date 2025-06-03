@@ -2,10 +2,27 @@ section {
     height: 100px;
     background-color: #141D2F;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+  
+
+}
+
+a.active {
+  color: #70E61C;
+  border-bottom: 3px solid #9747FF;
+}
+
+.content {
+    padding: 40px 80px 64px;
+    width: 100%;
+    max-width: 1920px;
+     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 80px 64px;
-    >img {
+     >img {
         width: 200px;
     }
     >nav {
@@ -13,9 +30,4 @@ section {
         gap: 24px;
     }
 
-}
-
-a.active {
-  color: #70E61C;
-  border-bottom: 3px solid #9747FF;
 }

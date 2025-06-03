@@ -1,14 +1,19 @@
 .person-name {
     position: absolute;
-    width: 20%;
+    min-width: 650px;
     color: white;
     display: flex;
     flex-direction: column;
     position: absolute;
     align-items: center;
-    z-index: 2;
-    right: 100px;
-    top: 300px;
+    justify-content: center;
+    z-index: 4;
+    right: 10%;
+    top: 30%;
+
+    @media (max-width: 1300px) {
+        right: 32px;
+    }
 
 
 
@@ -35,7 +40,7 @@
         width: fit-content;
         border-radius: 10px;
         font-size: 23px;
-        font-weight: 400px;
+        font-weight: 400;
         cursor: pointer;
         transform: scale(1);
         transition: transform 125ms ease-in-out;
@@ -55,7 +60,7 @@
 
     >img {
         object-fit: contain;
-        width: 500px;
+        height: 70%;
         display: flex;
         z-index: 1;
         position: relative;
@@ -73,32 +78,35 @@
     width: 700px;
 }
 
-.photo-arm {
-    position: absolute;
-    top: 190px;
-    width: 500px;
-    z-index: 3;
-    left: 100px;
-}
+
 
 .person {
     width: 100%;
     height: 100vh;
-   position: relative;
-   >img {
-    width: 30%;
-    position: absolute;
-    top: 0;
-    left: 10%;
-   }
+    position: relative;
+
+    >img {
+        width: 25%;
+        position: absolute;
+        bottom: 200px;
+        left: 10%;
+
+        @media (max-width: 2000px) {
+            width: 400px;
+        }
+    }
 }
+
 
 .photo-container {
     position: absolute;
-    right: 0;
-    left: 0;
-    width: 100%;
+    inset: 0; /* top: 0; right: 0; bottom: 0; left: 0 */
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -124,15 +132,6 @@ section {
 
 }
 
-
-
-
-.content {
-    width: 100%;
-    overflow: hidden;
-}
-
-
 .hero-footer {
     position: absolute;
     bottom: 64px;
@@ -144,7 +143,7 @@ section {
 
     >p {
         color: white;
-        margin-left: 100px;
+        margin-left: 24px;
         font-size: 24px;
     }
 }
@@ -158,17 +157,80 @@ section {
 
 .shape-with-person {
     position: absolute;
-    top: 40%;
+    top: 0;
     right: 0;
     left: 0;
     bottom: 0;
+    overflow: hidden;
+}
 
+.photo-arm {
+    width: 25%;
+    position: absolute;
+    z-index: 4;
+    bottom: 200px;
+    left: 10%;
 
+    @media (max-width: 2000px) {
+        width: 600px;
+    }
+}
+
+.background {
+    width: 30% !important;
+    left: 3% !important;
+     @media (max-width: 2000px) {
+            width: 600px !important;
+        }
 }
 
 .shape {
     width: 100%;
     position: absolute;
+    max-height: 550px;
+    min-height: 300px;
     z-index: 3;
-    top: 10%;
+    bottom: 0;
+    min-width: 1920px;
+}
+
+.scroll-down {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    bottom: 100px;
+    right: 20px;
+    color: white;
+    rotate: 90deg;
+    z-index: 5;
+
+    >img {
+        rotate: -90deg;
+    }
+}
+
+
+
+@media (min-width:2200px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 86px !important;
+    }
+
+    .person-name {
+        >span {
+            left: -149px;
+            font-size: 91px;
+            top: 68px;
+        }
+    }
+
+    .background {
+        width: 600px !important;
+        left: 3% !important;
+    }
 }

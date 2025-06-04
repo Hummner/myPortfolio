@@ -3,8 +3,8 @@ section {
     background-color: #141D2F;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 100px 64px;
+    justify-content: center;
+
 }
 
 .social-media {
@@ -19,9 +19,11 @@ section {
     flex-direction: column;
     justify-content: center;
     position: relative;
+
     >img {
         width: 300px;
     }
+
     >a {
         position: absolute;
         bottom: -32px;
@@ -31,4 +33,13 @@ section {
 .copyright {
     color: white;
     font-size: 23px;
+}
+
+.content {
+    padding: 100px 100px;
+    max-width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }

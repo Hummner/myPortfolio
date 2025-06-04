@@ -19,8 +19,24 @@ html {
   scroll-behavior: smooth;
 }
 
+.button-green {
+    background-color: #70E61C;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 24px;
+    font-size: 21px;
+    transform: scale(1.0);
+    transition: transform 125ms ease, background-color 125ms ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #9747FF;
+        transform: scale(1.2);
+    }
+}
+
 h1 {
-        font-size: 54px;
+        font-size: 60px;
         font-weight: 700;
         color: white;
     }

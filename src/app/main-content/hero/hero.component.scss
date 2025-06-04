@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 0 64px;
+     padding: 0px 100px;
     position: relative;
 }
 
@@ -44,21 +44,7 @@ section {
     flex: 1;
 }
 
-.button-green {
-    background-color: #70E61C;
-    color: white;
-    border-radius: 10px;
-    padding: 8px 16px;
-    font-size: 21px;
-    transform: scale(1.0);
-    transition: transform 125ms ease, background-color 125ms ease;
-    cursor: pointer;
 
-    &:hover {
-        background-color: #9747FF;
-        transform: scale(1.2);
-    }
-}
 
 .name {
     position: relative;

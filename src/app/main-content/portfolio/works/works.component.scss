@@ -1,0 +1,43 @@
+section {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.works-image {
+    width: 400px;
+}
+
+.image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    >h2 {
+        width: 100%;
+        text-align: left;
+        color: #9747FF;
+    }
+
+    >h3 {
+         width: 100%;
+        text-align: left;
+        color: #70E61C;
+        font-weight: 400;
+    }
+
+    >p {
+         width: 100%;
+        text-align: left;
+        color: white;
+    }
+}

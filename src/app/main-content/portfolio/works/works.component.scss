@@ -1,12 +1,5 @@
-section {
-    max-width: 1000px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
 .works-image {
-    width: 400px;
+    width: 600px;
 }
 
 .image-section {
@@ -22,6 +15,8 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 8px;
+
     >h2 {
         width: 100%;
         text-align: left;
@@ -29,15 +24,67 @@ section {
     }
 
     >h3 {
-         width: 100%;
+        width: 100%;
         text-align: left;
         color: #70E61C;
         font-weight: 400;
     }
 
     >p {
-         width: 100%;
+        width: 100%;
         text-align: left;
         color: white;
     }
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+   
+}
+
+section {
+    max-width: 1920px;
+    margin-top: 100px;
+}
+
+.project.reverse {
+    flex-direction: row-reverse !important;
+    text-align: right;
+
+    >div {
+        >h2 {
+
+            text-align: right !important;
+
+        }
+
+        >h3 {
+
+            text-align: right !important;
+
+
+        }
+
+        >p {
+
+            text-align: right !important;
+
+        }
+    }
+
+    .works-buttons {
+        justify-content: flex-end !important;
+    }
+
+}
+
+.works-buttons {
+    margin-top: 24px;
+    display: flex;
+    gap: 48px;
+    justify-content: flex-start;
+    width: 100%;
 }

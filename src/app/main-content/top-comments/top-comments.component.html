@@ -1,0 +1,35 @@
+<section>
+    <div class="content">
+        <img class="quotation" src="assets/img/quotation.png" alt="">
+        <div class="comment-section">
+            
+            <div class="container">
+                <div class="container-text">
+                    <p>{{ comments[this.currentComment].text }}</p>
+                </div>
+                <div class="container-name">
+                    <div class="placeholder">
+                        <div></div>
+                    </div>
+
+                    <p class="name">{{ comments[this.currentComment].name }}</p>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class="image-section">
+            <img src="assets/img/person_{{ currentComment }}.png" alt="">
+        </div>
+    </div>
+    <div class="slider-buttons">
+        <img src="assets/icons/arrow_back.png" (click)="lastComment()" alt="">
+        <span class="indicator" [ngClass]="{'active': currentComment == 0}">&#8226;</span>
+        <span class="indicator" [ngClass]="{'active': currentComment == 1}">&#8226;</span>
+        <span class="indicator" [ngClass]="{'active': currentComment == 2}">&#8226;</span>
+        <img src="assets/icons/arrow_forward.png" (click)="nextComment()" alt="">
+    </div>
+    <div class="placeholder-horizontal"></div>
+</section>

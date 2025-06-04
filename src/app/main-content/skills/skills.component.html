@@ -41,10 +41,10 @@
                 <img src="assets/icons/scrum_11.png" alt="">
                 <span>Scrum</span>
             </div>
-            <div class="icon purple">
+            <div class="icon purple" (mouseenter)="this.showDialog = true" (mouseleave)="this.showDialog = false">
                 <img src="assets/icons/Property 1=Continually learning.png" alt="">
                 <span>Continually<br>learning</span>
-                <div class="small-dialog-box">
+                <div class="small-dialog-box" *ngIf="showDialog">
                     <img src="assets/icons/dialog.png" alt="">
                     <div class="dialog-content">
                         <div class="dialog-text">

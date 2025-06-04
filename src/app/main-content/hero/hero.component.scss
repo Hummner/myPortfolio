@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-     padding: 0px 100px;
+    padding: 200px 100px 0;
     position: relative;
 }
 
@@ -78,16 +78,11 @@ section {
 }
 
 .shape {
-    position: absolute;
+   position: absolute;
     z-index: 1;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    top: 55%;
     width: 100%;
-    height: calc(50% + 300px);
-    @media (max-height: 1850px) {
-        height: 50%;
-    }
+    height: 600px;
 }
 
 .person-background {
@@ -110,6 +105,7 @@ section {
     z-index: 5;
     align-items: center;
     gap: 24px;
+
     >p {
         color: white;
         font-size: 21px;
@@ -117,14 +113,14 @@ section {
 }
 
 .placeholder-horizontal {
-  position: absolute;
-  left: 0;
-  right: calc(50% + 800px);
-  bottom: 94px;
-  height: 3px;
-  background-color: #9747FF;
-  z-index: 4;
-  min-width: 170px
+    position: absolute;
+    left: 0;
+    right: calc(50% + 800px);
+    bottom: 94px;
+    height: 3px;
+    background-color: #9747FF;
+    z-index: 4;
+    min-width: 170px
 }
 
 .scroll-down {
@@ -137,7 +133,80 @@ section {
     rotate: 90deg;
     right: 64px;
     z-index: 4;
+
     >img {
         rotate: -90deg;
     }
+}
+
+
+@media (max-width: 1220px) {
+    .name {
+        position: relative;
+
+        >h1 {
+            font-size: 40px;
+        }
+
+        >h2 {
+            font-size: 30px;
+
+        }
+
+        >span {
+            font-size: 31px;
+            top: 22px;
+            left: 21px;
+        }
+
+    }
+
+    .person {
+        width: 428px;
+    }
+
+    .person-arm {
+        width: 428px;
+    }
+
+    .text-section {
+        margin-top: -300px;
+    }
+
+    .content {
+        padding: 200px 50px 0;
+    }
+}
+
+
+@media (max-width: 910px) {
+    .content {
+        flex-direction: column;
+        justify-content: unset;
+    }
+
+    .person {
+        width: 300px;
+    }
+
+    .person-arm {
+        width: 300px;
+    }
+
+
+    .shape {
+    top: 40%;
+    width: 100%;
+    height: 339px;
+    }
+
+    .person-background {
+        width: 500px;
+    }
+
+    .text-section {
+        margin-top: unset;
+        flex: unset;
+    }
+    
 }

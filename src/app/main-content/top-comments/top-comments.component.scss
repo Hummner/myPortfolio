@@ -1,0 +1,122 @@
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 100px;
+    gap: 24px;
+    position: relative;
+}
+
+.content {
+    max-width: 1920px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.comment-section {
+    flex: 1;
+}
+
+.container {
+    border-radius: 20px;
+    border: 3px solid #70E61C;
+    height: 300px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 24px;
+
+
+}
+
+.slider-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    >img {
+        border-radius: 100%;
+        padding: 8px;
+        border: 3px solid transparent;
+        cursor: pointer;
+
+        &:hover {
+            border: 3px solid #70E61C;
+        }
+    }
+
+    >span {
+        font-size: 40px;
+        filter: brightness(0) saturate(100%) invert(31%) sepia(91%) saturate(3196%) hue-rotate(251deg) brightness(102%) contrast(101%);
+    }
+}
+
+
+.image-section {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-name {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.container-text {
+    >p {
+        text-align: center;
+        color: white;
+    }
+}
+
+
+.name {
+    color: white;
+}
+
+.placeholder {
+    display: flex;
+    flex: 1;
+
+    >div {
+        height: 3px;
+        width: 100%;
+        background-color: #9747FF;
+    }
+}
+
+.indicator.active {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(31%) saturate(4140%) hue-rotate(45deg) brightness(108%) contrast(82%) !important;
+}
+
+.placeholder-horizontal {
+    position: absolute;
+    right: 0;
+    left: calc(50% + 658px);
+    top: 250px;
+    height: 3px;
+    background-color: #9747FF;
+
+    @media (max-width: 1530px) {
+        width: 102px;
+        left: unset;
+        right: 0;
+    }
+}
+
+.quotation {
+    position: absolute;
+    top: -37px;
+    left: -64px;
+}

@@ -155,12 +155,12 @@ section {
 }
 
 .shape {
-    height: 560px;
+    /* height: 560px; */
+    height: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: -65px;
     left: -30vw;
     width: 130vw;
-    /* height: auto; */
     z-index: 1;
    
 }

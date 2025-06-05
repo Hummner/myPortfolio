@@ -7,6 +7,7 @@
     height: 100%;
     padding: 200px 100px 0;
     position: relative;
+       
 }
 
 section {
@@ -16,16 +17,17 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
 }
 
-.images {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+// .images {
+//     width: 40%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+// }
 
 .person {
     width: 500px;
@@ -77,16 +79,17 @@ section {
 
 }
 
-.shape {
-   position: absolute;
-    z-index: 1;
-    top: 55%;
-    width: 100%;
-    height: 600px;
-}
+// .shape {
+//     position: absolute;
+//     z-index: 1;
+//     top: 55%;
+//     width: 100%;
+//     height: 600px;
+// }
 
 .person-background {
     position: absolute;
+    left: -154px;
 
 }
 
@@ -95,6 +98,7 @@ section {
     position: absolute;
     z-index: 3;
     width: 500px;
+    left: 0;
 }
 
 .hero-footer {
@@ -140,73 +144,107 @@ section {
 }
 
 
-@media (max-width: 1220px) {
-    .name {
-        position: relative;
+.images {
+    max-height: 80vh;
+    width: auto;
+    z-index: 2;
+    position: relative;
+ 
+}
 
-        >h1 {
-            font-size: 40px;
-        }
-
-        >h2 {
-            font-size: 30px;
-
-        }
-
-        >span {
-            font-size: 31px;
-            top: 22px;
-            left: 21px;
-        }
-
-    }
-
-    .person {
-        width: 428px;
-    }
-
-    .person-arm {
-        width: 428px;
-    }
-
-    .text-section {
-        margin-top: -300px;
-    }
-
-    .content {
-        padding: 200px 50px 0;
-    }
+.shape {
+    height: 560px;
+    position: absolute;
+    bottom: -170px;
+    left: -30vw;
+    width: 130vw;
+    /* height: auto; */
+    z-index: 1;
 }
 
 
-@media (max-width: 910px) {
-    .content {
-        flex-direction: column;
-        justify-content: unset;
-    }
+// @media (max-width: 1220px) {
+//     .name {
+//         position: relative;
 
-    .person {
-        width: 300px;
-    }
+//         >h1 {
+//             font-size: 40px;
+//         }
 
-    .person-arm {
-        width: 300px;
-    }
+//         >h2 {
+//             font-size: 30px;
+
+//         }
+
+//         >span {
+//             font-size: 31px;
+//             top: 22px;
+//             left: 21px;
+//         }
+
+//     }
+
+//     .person {
+//         width: 428px;
+//     }
+
+//     .person-arm {
+//         width: 428px;
+//     }
+
+//     .text-section {
+//         margin-top: -300px;
+//     }
+
+//     .content {
+//         padding: 200px 50px 0;
+//     }
+
+//     .placeholder-horizontal {
+//         min-width: 70px;
+//     }
+
+//     .hero-footer {
+//         left: 100px;
+//     }
+
+// }
 
 
-    .shape {
-    top: 40%;
-    width: 100%;
-    height: 339px;
-    }
 
-    .person-background {
-        width: 500px;
-    }
 
-    .text-section {
-        margin-top: unset;
-        flex: unset;
-    }
-    
-}
+// @media (max-width: 910px) {
+
+//     .scroll-down {
+//         display: none;
+//     }
+//     .content {
+//         flex-direction: column;
+//         justify-content: unset;
+//     }
+
+//     .person {
+//         width: 300px;
+//     }
+
+//     .person-arm {
+//         width: 300px;
+//     }
+
+
+//     .shape {
+//         top: 40%;
+//         height: 50%;
+//         height: 339px;
+//     }
+
+//     .person-background {
+//         width: 500px;
+//     }
+
+//     .text-section {
+//         margin-top: unset;
+//         flex: unset;
+//     }
+
+// }

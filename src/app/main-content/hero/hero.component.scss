@@ -7,7 +7,7 @@
     height: 100%;
     padding: 100px 100px 0;
     position: relative;
-       
+
 }
 
 section {
@@ -30,9 +30,9 @@ section {
 // }
 
 .person {
- width: 100%;
- height: 100%;
- object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     z-index: 1;
 }
 
@@ -45,6 +45,8 @@ section {
     position: relative;
     z-index: 4;
     flex: 1;
+    height: 100%;
+    margin-bottom: 160px;
 }
 
 
@@ -96,10 +98,10 @@ section {
 
 
 .person-arm {
-    position: absolute;
-    z-index: 3;
-    width: 500px;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 4;
 }
 
 .hero-footer {
@@ -146,24 +148,156 @@ section {
 
 
 .images {
-      z-index: 2;
+    z-index: 2;
     position: relative;
     border: 3px solid black;
     width: 50%;
     height: 100%;
- 
+    max-height: 1000px;
+
 }
 
 .shape {
-    /* height: 560px; */
-    height: 50%;
+    height: calc(50% + 200px);
     position: absolute;
-    bottom: -65px;
-    left: -30vw;
-    width: 130vw;
+    top: calc(50% - 5px);
+    left: -34vw;
+    width: 128vw;
     z-index: 1;
-   
+
 }
+
+@media (max-width: 1400px) {
+    .images {
+        width: 45%;
+    }
+
+    .shape {
+        top: 44%;
+    }
+
+    .name {
+
+        >h1 {
+            font-size: 35px;
+
+            padding-left: 40px;
+        }
+
+        >h2 {
+            font-size: 25px;
+            letter-spacing: 4px;
+            padding-left: 40px;
+            margin-top: -16px;
+        }
+
+        >span {
+            font-size: 23px;
+            top: 22px;
+            left: 0px;
+        }
+
+    }
+
+    .button-green {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 956px) {
+    .content {
+        flex-direction: column;
+        padding: 100px 50px 0;
+        height: 70%;
+    }
+
+    .images {
+        width: 60%;
+    }
+
+    .name {
+        >h2 {
+            padding-left: 40px;
+        }
+
+        >h1 {
+            padding-left: 40px;
+        }
+
+        >span {
+            font-size: 23px;
+            top: 22px;
+            left: 0px;
+        }
+    }
+
+    .button-green {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .content {
+        padding: 100px 24px 0;
+    }
+
+    .name {
+        >h2 {
+            font-size: 18px;
+            margin-top: -8px;
+        }
+
+        >h1 {
+            font-size: 25px;
+        }
+
+        >span {
+            font-size: 19px;
+            top: 14px;
+            left: 5px;
+        }
+    }
+
+    .button-green {
+        font-size: 18px;
+    }
+
+    .images {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .name {
+        >h2 {
+            font-size: 13px;
+            margin-top: -8px;
+        }
+
+        >h1 {
+            font-size: 20px;
+        }
+
+        >span {
+            font-size: 14px;
+            top: 11px;
+            left: 12px;
+        }
+
+        .button-green {
+            font-size: 16px;
+        }
+    }
+
+    .shape {
+        max-height: 254px;
+        top: 54%;
+    }
+}
+
+
 
 
 // @media (max-width: 1220px) {

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 200px 100px 0;
+    padding: 100px 100px 0;
     position: relative;
        
 }
@@ -30,8 +30,9 @@ section {
 // }
 
 .person {
-    width: 500px;
-    position: relative;
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
     z-index: 1;
 }
 
@@ -145,21 +146,23 @@ section {
 
 
 .images {
-    max-height: 80vh;
-    width: auto;
-    z-index: 2;
+      z-index: 2;
     position: relative;
+    border: 3px solid black;
+    width: 50%;
+    height: 100%;
  
 }
 
 .shape {
     height: 560px;
     position: absolute;
-    bottom: -170px;
+    bottom: 0;
     left: -30vw;
     width: 130vw;
     /* height: auto; */
     z-index: 1;
+   
 }
 
 

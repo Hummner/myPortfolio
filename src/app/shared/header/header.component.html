@@ -5,7 +5,26 @@
             <a href="#about_me" [class.active]="activeSection === 'about_me'">About me</a>
             <a href="#skills" [class.active]="activeSection === 'skills'">Skills</a>
             <a href="#portfolio" [class.active]="activeSection === 'portfolio'">Portfolio</a>
+            <div class="language">
+                <span class="button-small">DE</span>
+                <span class="button-small active-small">EN</span>
+            </div>
         </nav>
+        <div (click)="burgerOpen()" class="burger-icon" [ngClass]="{'d-none' : isMenuOpen}">
+            <img src="assets/icons/burger.png" alt="">
+        </div>
+
+    </div>
+    <div [ngClass]="{'slide-animation' : !isMenuOpen}" class="burger-menu slide-animation">
+        <div class="burger-header">
+            <img class="portfolio-logo" src="assets/img/portfolio_logo.png" alt="">
+            <img class="close" (click)="burgerOpen()" src="assets/icons/close.png" alt="">
+        </div>
+        <div class="burger-content">
+            <a href="#about_me" [class.active]="activeSection === 'about_me'">About me</a>
+            <a href="#skills" [class.active]="activeSection === 'skills'">Skills</a>
+            <a href="#portfolio" [class.active]="activeSection === 'portfolio'">Portfolio</a>
+        </div>
     </div>
 
 </section>

@@ -19,21 +19,30 @@ section {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    align-items: flex-start;
 
     >img {
-        width: 300px;
+        width: 250px;
     }
 
     >a {
-        position: absolute;
         bottom: -32px;
     }
 }
 
 .copyright {
     color: white;
-    font-size: 23px;
+
+    >h2 {
+        font-size: 23px;
+    }
+
 }
+
+.legal-notice-mobile {
+    display: none;
+}
+
 
 .content {
     padding: 100px 100px;
@@ -42,4 +51,38 @@ section {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+@media (max-width: 920px) {
+    .content {
+        flex-direction: column;
+        gap: 48px;
+        padding: 50px 50px;
+
+    }
+
+    .footer-logo {
+        >a {
+            display: none;
+        }
+    }
+
+    .legal-notice-mobile {
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .footer-logo {
+        >img {
+            width: 200px;
+        }
+    }
+
+    .copyright {
+        >h2 {
+            font-size: 20px;
+        }
+    }
 }

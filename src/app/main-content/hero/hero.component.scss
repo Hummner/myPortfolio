@@ -18,7 +18,6 @@ section {
     width: 100%;
 }
 
-
 .images {
     width: 40%;
     object-fit: contain;
@@ -45,7 +44,6 @@ section {
 .text {
     flex: 1;
     position: relative;
-
     height: 100%;
 
     >div {
@@ -58,9 +56,7 @@ section {
         left: 0;
         right: 0;
     }
-
 }
-
 
 .person {
     width: 400px;
@@ -73,14 +69,12 @@ section {
     object-fit: contain;
     height: 100%;
     position: absolute;
-
 }
 
 .shape {
     position: absolute;
     top: calc(50% - 229px);
     left: -50vw;
-    /* top: 0; */
     width: 145vw;
     max-height: 1000px;
 }
@@ -152,18 +146,33 @@ section {
     }
 }
 
-
 @media (max-width: 3000px) {
     .text {
         >div {
             top: 25%;
         }
     }
+}
 
+@media (max-width: 1200px) {
+    .name {
+        >h1 {
+            font-size: 40px;
+        }
+
+        >h2 {
+            font-size: 31px;
+        }
+
+        >span {
+            font-size: 28px;
+            top: 25px;
+            left: -7px;
+        }
+    }
 }
 
 @media (max-width: 1000px) {
-
     .bg {
         top: calc(50% - 73px);
         left: -19vw;
@@ -184,14 +193,12 @@ section {
     }
 
     .name {
-
         >h1 {
             font-size: 40px;
         }
 
         >h2 {
             font-size: 30px;
-
         }
 
         >span {
@@ -200,7 +207,6 @@ section {
             left: -14px;
         }
     }
-
 }
 
 @media (max-width: 920px) {
@@ -230,8 +236,6 @@ section {
             top: 0%;
         }
     }
-
-
 }
 
 
@@ -270,7 +274,6 @@ section {
             font-size: 28px;
             letter-spacing: unset;
             margin-top: -12px;
-
         }
 
         >span {
@@ -292,6 +295,7 @@ section {
     .text {
         >div {
             top: 0%;
+            margin-top: -30px;
         }
     }
 
@@ -299,11 +303,20 @@ section {
         min-width: unset;
         right: calc(50% + 116px);
         bottom: 40px;
-
     }
-
 }
 
+@media (max-height: 700px) {
+    .images {
+        min-height: 400px;
+    }
+}
+
+@media (max-height: 500px) {
+    .images {
+        min-height: 300px;
+    }
+}
 
 @media (max-width: 500px) {
     .name {
@@ -317,7 +330,6 @@ section {
             font-size: 18px;
             letter-spacing: unset;
             margin-top: -8px;
-
         }
 
         >span {
@@ -333,6 +345,7 @@ section {
 
     .images {
         height: 40%;
+        min-height: 400px;
     }
 
     .person-arm {
@@ -340,19 +353,47 @@ section {
     }
 }
 
-// @media (max-width: 2000px) {
-//     .bg {
-//         position: absolute;
-//         bottom: -442px;
-//         left: -22vw;
-//         width: 119vw;
-//         max-height: 170%;
-//     }
+@media (max-height: 600px) {
+    .images {
+        min-height: 300px;
+    }
 
-//     .text {
-//         >div {
-//             top: 20%;
-//         }
-//     }
+    .bg {
+        top: calc(50% + -30px);
+    }
 
-// }
+    @media (max-width: 1024px) {
+        .bg {
+            top: calc(50% - 160px);
+        }
+
+        .hero-footer {
+            bottom: 40px
+        }
+
+        .placeholder-horizontal {
+            bottom: 60px;
+        }
+
+        .scroll-down {
+            bottom: 65px;
+
+        }
+    }
+}
+
+
+@media (max-height: 600px) {
+    @media (max-width: 800px) {
+        .bg {
+            top: calc(50% - 30px);
+        }
+
+        .text {
+            >div {
+                margin-top: -50px;
+            }
+        }
+
+    }
+}

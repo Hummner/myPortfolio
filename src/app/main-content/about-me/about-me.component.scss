@@ -1,5 +1,6 @@
 .about-me-text {
     width: 50%;
+
     >p {
         color: white;
         font-size: 21px;
@@ -13,11 +14,12 @@ h1 {
 .content {
     max-width: 1920px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 100px 100px;
     overflow-x: hidden;
-   
+
+
 }
 
 section {
@@ -26,20 +28,21 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
-     
+
 }
 
 .about-me-list {
     display: flex;
     margin-top: 64px;
     align-items: center;
-    
+
     >img {
         margin-right: 24px;
         width: 50px;
         height: 50px;
         object-fit: contain;
     }
+
     >p {
         color: white;
         font-size: 21px;
@@ -47,27 +50,32 @@ section {
 }
 
 .about-me-img {
-    left: calc(50% + 200px);
-    top: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    position: absolute;
-    
- 
     >img {
         width: 400px;
         height: 400px;
         border-radius: 100%;
         border: 3px solid #70E61C;
     }
-  
+
 }
 
-  .placeholder-horizontal {
+.placeholder-horizontal {
     position: absolute;
     right: 0;
-    left: calc(50% + 600px);
-    top: calc(30% + 200px);
+    left: calc(50% + 627px);
+    top: calc(30% + 222px);
     height: 3px;
     background-color: #70E61C;
-  }
+}
 
+@media (max-width: 1920px) {
+    .placeholder-horizontal-image {
+        display: block;
+    }
+
+}

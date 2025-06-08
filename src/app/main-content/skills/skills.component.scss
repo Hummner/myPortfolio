@@ -94,7 +94,7 @@ h2 {
     position: absolute;
     right: 0;
     left: calc(50% + 888px);
-    top: 145px;
+    top: 160px;
     height: 3px;
     background-color: #9747FF;
 
@@ -120,8 +120,8 @@ h2 {
 
 .small-dialog-box {
     position: absolute;
-    top: -175px;
-    left: -29px;
+    top: -190px;
+    left: -22px;
     pointer-events: none;
 
     >img {
@@ -129,16 +129,26 @@ h2 {
     }
 }
 
+.triangle {
+    position: absolute;
+    bottom: -8px;
+    width: 36px !important;
+    height: 19px;
+    left: 43px;
+
+
+}
+
 .dialog-content {
     position: absolute;
-    bottom: 40px;
+    bottom: 24px;
     left: 0;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 12px;
+    gap: 20px;
 }
 
 .dialog-img {
@@ -158,4 +168,76 @@ h2 {
 
 .dialog-text {
     text-align: center;
+}
+
+.text-intro-mobile {
+    display: none;
+    width: 100%;
+    text-align: right;
+}
+
+@media (max-width: 920px) {
+    .text-intro-mobile {
+        display: block;
+    }
+
+    .text-intro {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 50px;
+    }
+
+    .icons-section {
+        width: 100%;
+        gap: 60px;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .placeholder-horizontal {
+        top: 137px;
+        width: 40px;
+    }
+
+    .icons-section {
+        justify-content: center;
+
+    }
+
+    .triangle {
+        left: 104px;
+    }
+
+    .small-dialog-box {
+        left: -83px;
+        top: -205px;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+    .content {
+        padding: 100px 16px;
+    }
+
+    .icon {
+        >img {
+            width: 48px;
+            height: 48px;
+        }
+
+    }
+
+    .placeholder-horizontal {
+        top: 132px;
+        width: 11px;
+    }
 }

@@ -1,5 +1,14 @@
 <section>
+
     <div class="content">
+        <div class="text-intro-mobile">
+            <h1>My skills</h1>
+            <p>Here’s a look at the front-end technologies I’ve worked with so far. Through each project, I’ve
+                deepened
+                my understanding and learned how to apply these tools effectively to create engaging and functional
+                user
+                interfaces.</p>
+        </div>
         <div class="icons-section">
             <div class="icon">
                 <img src="assets/icons/html_1.png" alt="">
@@ -42,9 +51,10 @@
                 <span>Scrum</span>
             </div>
             <div class="icon purple" (mouseenter)="this.showDialog = true" (mouseleave)="this.showDialog = false">
-                <img src="assets/icons/Property 1=Continually learning.png" alt="">
+                <img class="learning-icon" src="assets/icons/Property 1=Continually learning.png" alt="">
                 <span>Continually<br>learning</span>
                 <div class="small-dialog-box" *ngIf="showDialog">
+                    <img class="triangle" src="assets/icons/triangle.png" alt="">
                     <img src="assets/icons/dialog.png" alt="">
                     <div class="dialog-content">
                         <div class="dialog-text">
@@ -66,12 +76,17 @@
         </div>
 
         <div class="text-section">
-            <h1>My skills</h1>
-            <p>Here’s a look at the front-end technologies I’ve worked with so far. Through each project, I’ve deepened
-                my understanding and learned how to apply these tools effectively to create engaging and functional user
-                interfaces.</p>
+            <div class="text-intro">
+                <h1>My skills</h1>
+                <p>Here’s a look at the front-end technologies I’ve worked with so far. Through each project, I’ve
+                    deepened
+                    my understanding and learned how to apply these tools effectively to create engaging and functional
+                    user
+                    interfaces.</p>
+            </div>
 
-            <h2>Looking for <span>another skill</span>?</h2>
+
+            <h2>Looking for <span>another skill </span>?</h2>
             <p>I'm always looking to expand my skill set and explore new technologies. Frameworks like Vue.js or
                 React.js really interest me because they offer powerful ways to build modern, interactive web
                 applications. I'm also excited to dive deeper into backend development to better understand the full

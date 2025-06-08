@@ -54,6 +54,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     >img {
         width: 400px;
@@ -76,6 +77,63 @@ section {
 @media (max-width: 1920px) {
     .placeholder-horizontal-image {
         display: block;
+        height: 3px;
+        left: calc(50% + 200px);
+        background-color: #70E61C;
+        position: absolute;
+        width: calc(50% + 150px);
     }
 
+    .placeholder-horizontal {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .about-me-img {
+        >img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .placeholder-horizontal-image {
+        left: calc(50% + 150px);
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 70px;
+
+    }
+}
+
+@media (max-width:920px) {
+    .about-me-img {
+        display: none;
+    }
+
+    .content {
+        padding: 100px 50px;
+    }
+
+    .about-me-text {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .content {
+        padding: 100px 16px;
+    }
+
+    .about-me-list {
+        >img {
+            width: 32px;
+            height: 32px;
+        }
+    }
 }

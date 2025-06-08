@@ -156,3 +156,11 @@ a.active {
         display: none !important;
     }
 }
+
+@media (max-width: 500px) {
+    .content {
+        padding: 100px 16px;
+    }
+
+    
+}

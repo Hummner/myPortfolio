@@ -1,0 +1,71 @@
+<section>
+    <div class="content">
+        <div class="contact-header">
+            <h1>Contact</h1>
+        </div>
+        <div class="contact-main">
+            <div class="text">
+                <h2>Got a problem to solve?</h2>
+                <p>If you're looking for a motivated Frontend Developer who's ready to bring value to your project, feel
+                    free to get in touch. I'm excited to contribute my skills and grow with a team that values quality,
+                    creativity, and collaboration.</p>
+                <p>Need a Frontend developer? <b>Contact me!</b></p>
+            </div>
+            <form class="contact-field" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="contact-label">
+                    <label class="input-label" for="name"><input [(ngModel)]="contactData.name" placeholder="Name"
+                            name="name" minlength="4" type="text" id="name" required #name="ngModel"></label>
+                    <span>
+                        @if (contactData.name == "" && name.touched) {
+                        This field is required!
+                        }
+                        @else if (!name.valid && name.touched && !name.disabled) {
+                        Please enter a valid name! Min 4 charachter!
+                        }
+
+
+                    </span>
+                </div>
+
+                <div class="contact-label">
+                    <label class="input-label" for="email"><input [(ngModel)]="contactData.email" name="email"
+                            placeholder="Email" type="text" required id="email" #email="ngModel"
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"></label>
+                    <span> @if (contactData.email == "" && email.touched) {
+                        This field is required!
+                        }
+                        @else if (!email.valid && email.touched && !email.disabled) {
+                        Please enter a valid email!
+                        }</span>
+                </div>
+
+                <div class="contact-label">
+                    <label class="input-label" for="message"><textarea [(ngModel)]="contactData.message" name="message"
+                            required id="message" minlength="10" placeholder="Message" #message="ngModel"></textarea></label>
+                    <span> @if (contactData.message == "" && message.touched) {
+                        This field is required!
+                        }
+                        @else if (!message.valid && message.touched && !message.disabled) {
+                        Please enter a valid message! Min 10 charachter!
+                        }</span>
+                </div>
+
+                <div class="privacy-input">
+                    <div class="custom-checkbox">
+                        <label for="checkbox"><img src="assets/icons/checkbox.png" alt=""></label>
+                        <input id="checkbox" type="checkbox">
+                    </div>
+
+                    <p>I've read the
+                        privacy policy
+                        and agree to the processing of my data as outlined.</p>
+
+                </div>
+
+                <button [ngClass]="{'button-disabled': !contactForm.valid}"  class="button-green submit-button">Send Message :)</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="placeholder"></div>
+</section>

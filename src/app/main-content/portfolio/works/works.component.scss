@@ -42,7 +42,7 @@
     align-items: center;
     width: 100%;
     gap: 100px;
-   
+
 }
 
 section {
@@ -57,26 +57,26 @@ section {
     >div {
         >h2 {
 
-            text-align: right !important;
+            text-align: right;
 
         }
 
         >h3 {
 
-            text-align: right !important;
+            text-align: right;
 
 
         }
 
         >p {
 
-            text-align: right !important;
+            text-align: right;
 
         }
     }
 
     .works-buttons {
-        justify-content: flex-end !important;
+        justify-content: flex-end;
     }
 
 }
@@ -87,4 +87,92 @@ section {
     gap: 48px;
     justify-content: flex-start;
     width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    .works-image {
+        width: 460px;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .project {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .project.reverse {
+        flex-direction: column !important;
+
+        >h2,
+        h3,
+        p {
+            text-align: center !important;
+        }
+    }
+
+    section {
+        gap: 130px;
+        max-width: 1920px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2,
+    h3,
+    p {
+        text-align: center !important;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .image-section {
+        width: 100%;
+    }
+
+    .works-buttons {
+        justify-content: center;
+        gap: 24px;
+    }
+
+
+    .project.reverse {
+        .works-buttons {
+            justify-content: center;
+            gap: 24px;
+        }
+
+    }
+
+    
+
+
+
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    img {
+        width: 300px !important;
+    }
+}
+
+@media (max-width: 350px) {
+    img {
+        width: 260px  !important;
+    }
+
+    .button-purple, .button-transparent {
+        padding: 4px 12px !important;
+    }
 }

@@ -14,7 +14,7 @@ export class ContactComponent {
 
 sentEmailUserFeddback = false;
   isChecked = false;
-  sentEmail = true;
+  sentEmail = false;
 
   trySubmit = false;
 

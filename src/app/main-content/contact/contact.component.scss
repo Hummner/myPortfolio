@@ -24,14 +24,14 @@ section {
 
 .contact-main {
     display: flex;
-    gap: 24px;
     justify-content: space-between;
     align-items: flex-start;
+
 
 }
 
 .text {
-    width: 50%;
+    width: 40%;
 
     >h2 {
         color: white;
@@ -71,6 +71,13 @@ section {
         &:focus {
             outline: none;
         }
+
+        :-webkit-autofill {
+            border: none;
+            background-color: transparent;
+        }
+
+
     }
 
     >textarea {
@@ -80,12 +87,46 @@ section {
         color: white;
         font-size: 21px;
         resize: vertical;
+        min-height: 60px;
 
         &:focus {
             outline: none;
         }
     }
 }
+
+input:-internal-autofill-selected {
+    border: none !important;
+    background: none !important;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid::after {
+    content: url(./../../../assets/icons/invalid.png);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 30px;
+    top: 20px;
+}
+
+.valid::after {
+    content: url(./../../../assets/icons/valid.png);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 30px;
+    top: 20px;
+}
+
+
 
 ::placeholder {
     color: white;
@@ -96,22 +137,32 @@ section {
     height: 3px;
     position: absolute;
     left: 0;
-    right: calc(50% + 40px);
-    top: 40px;
+    right: calc(50% + 200px);
+    top: 160px;
     background-color: #9747FF;
 }
 
 span {
     color: red;
     min-height: 23px;
+    font-size: 14px;
 }
 
 .privacy-input {
     display: flex;
-    gap: 24px;
+    gap: 12px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
 
     >p {
         color: white;
+    }
+
+    >span {
+        bottom: -20px;
+        position: absolute;
     }
 }
 
@@ -128,6 +179,7 @@ span {
     width: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 form {
@@ -139,6 +191,8 @@ form {
 
 .custom-checkbox {
     display: flex;
+    width: 18px;
+    height: 18px;
 
     >label {
         width: 18px;
@@ -165,4 +219,111 @@ form {
     background-color: #B6B6B6 !important;
     cursor: pointer;
     transform: unset;
+}
+
+.checkbox::after {
+    content: url(./../../../assets/icons/checkbox.png);
+}
+
+.checkbox-checked::after {
+    content: url(./../../../assets/icons/checkbox_checked.png);
+}
+
+.sent-email-feedback {
+    width: 100%;
+    color: white;
+    border: solid 3px #9747FF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px 24px;
+    font-size: 20px;
+    
+}
+
+.user-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+@media (max-width: 1200px) {
+    .text {
+        width: 30%;
+    }
+
+    .contact-field {
+        width: 60%;
+    }
+}
+
+@media (max-width: 920px) {
+    .contact-main {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .contact-field {
+        width: 100%;
+    }
+
+    .placeholder {
+        width: 36px;
+        top: 136px;
+        left: 0;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    .user-feedback {
+        width: 100%;
+    }
+
+
+
+    .content {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        padding: 50px 16px;
+    }
+
+    .placeholder {
+        left: 0;
+        width: 10px;
+        top: 80px;
+
+    }
+
+    .input-label {
+        >input {
+            font-size: 16px;
+        }
+
+        >textarea {
+            font-size: 16px;
+        }
+
+    }
+
+    .invalid::after {
+        top: 15px;
+    }
+
+    .valid::after {
+        top: 15px;
+    }
+
 }

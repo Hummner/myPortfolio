@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { Component, inject, Input, Output, EventEmitter } from '@angular/core';
+import { FormsModule, NgForm, NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +11,13 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+sentEmailUserFeddback = false;
+  isChecked = false;
+  sentEmail = true;
+
+  trySubmit = false;
+
 
   contactData = {
     name: "",
@@ -35,6 +42,7 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    this.trySubmit = true;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -47,10 +55,17 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
+      this.trySubmit = false;
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
-      console.log("Sent mail")
+      console.log("Sent mail");
+      this.sentEmail = true;
+      this.trySubmit = false;
     }
+  }
+
+  newEmail() {
+    this.sentEmail = false;
   }
 }

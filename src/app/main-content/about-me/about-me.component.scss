@@ -18,6 +18,8 @@ h1 {
     align-items: center;
     padding: 100px 100px;
     overflow-x: hidden;
+    position: relative;
+    z-index: 5;
 
 
 }
@@ -28,7 +30,14 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 
+}
+
+.shadow {
+    position: absolute;
+    right: calc(50% - 1400px);
+    z-index: 4;
 }
 
 .about-me-list {
@@ -86,6 +95,11 @@ section {
 
     .placeholder-horizontal {
         display: none;
+    }
+
+    .shadow {
+        right: -480px;
+        top: 10%;
     }
 
 }

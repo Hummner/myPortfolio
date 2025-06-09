@@ -3,6 +3,7 @@ section {
     justify-content: center;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .content {
@@ -12,6 +13,8 @@ section {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 
 
 }
@@ -52,6 +55,12 @@ section {
 
 
 
+}
+
+.shadow {
+    position: absolute;
+    bottom: -639px;
+    left: calc(50% - 1300px);
 }
 
 .input-label {
@@ -237,7 +246,7 @@ form {
     text-align: center;
     padding: 16px 24px;
     font-size: 20px;
-    
+
 }
 
 .user-feedback {
@@ -247,6 +256,12 @@ form {
     width: 50%;
     flex-direction: column;
     gap: 100px;
+}
+
+@media (max-width: 1920px) {
+    .shadow {
+        left: -500px;
+    }
 }
 
 

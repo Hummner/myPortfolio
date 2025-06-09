@@ -45,6 +45,7 @@ section {
     flex: 1;
     position: relative;
     height: 100%;
+    z-index: 5;
 
     >div {
         justify-content: center;
@@ -62,6 +63,8 @@ section {
     width: 400px;
     object-fit: contain;
     height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .person-arm {
@@ -69,14 +72,15 @@ section {
     object-fit: contain;
     height: 100%;
     position: absolute;
+    z-index: 3;
 }
 
-.shape {
+.person-shadows {
+    width: 600px;
+    object-fit: contain;
+    height: 100%;
     position: absolute;
-    top: calc(50% - 229px);
-    left: -50vw;
-    width: 145vw;
-    max-height: 1000px;
+    z-index: 1;
 }
 
 .bg {
@@ -85,6 +89,7 @@ section {
     left: -50vw;
     width: 145vw;
     max-height: 803px;
+    z-index: 4;
 }
 
 .hero-footer {

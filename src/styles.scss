@@ -29,6 +29,7 @@ html {
   transform: scale(1.0);
   transition: transform 125ms ease, background-color 125ms ease;
   cursor: pointer;
+  border: none;
 
   &:hover {
     background-color: #9747FF;
@@ -45,6 +46,7 @@ html {
   transform: scale(1.0);
   transition: transform 125ms ease, background-color 125ms ease;
   cursor: pointer;
+  border: none;
 
   &:hover {
     background-color: #70E61C;

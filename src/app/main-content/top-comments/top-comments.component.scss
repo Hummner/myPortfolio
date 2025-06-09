@@ -7,6 +7,7 @@ section {
     padding: 100px 100px;
     gap: 24px;
     position: relative;
+    overflow: hidden;
 }
 
 .content {
@@ -15,6 +16,15 @@ section {
     display: flex;
     align-items: center;
     gap: 50px;
+    z-index: 2;
+}
+
+.shadow {
+    position: absolute;
+    right: calc(50% - 1000px);
+    z-index: 1;
+    rotate: 90deg;
+    width: 500px;
 }
 
 .comment-section {
@@ -111,6 +121,7 @@ section {
     top: 250px;
     height: 3px;
     background-color: #9747FF;
+    z-index: 2;
 
     @media (max-width: 1530px) {
         width: 102px;
@@ -123,6 +134,16 @@ section {
     position: absolute;
     top: -37px;
     left: -64px;
+}
+
+@media (max-width: 1920px) {
+    .shadow {
+        right: -373px;
+        rotate: 180deg;
+        width: 531px;
+    }
+
+
 }
 
 @media (max-width: 1200px) {
@@ -174,6 +195,10 @@ section {
         margin-bottom: 24px;
 
     }
+
+    .shadow {
+        top: 0;
+    }
 }
 
 @media (max-width: 500px) {
@@ -198,5 +223,10 @@ section {
         left: -7px;
         width: 72px;
 
+    }
+
+    .shadow {
+        width: 460px;
+        top: -18px;
     }
 }

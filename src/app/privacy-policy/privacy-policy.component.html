@@ -1,0 +1,5 @@
+<h1>{{ 'privacy.title' | translate }}</h1>
+<section *ngFor="let section of sectionKeys">
+  <h2>{{ 'privacy.sections.' + section + '.title' | translate }}</h2>
+  <p>{{ 'privacy.sections.' + section + '.text' | translate }}</p>
+</section>

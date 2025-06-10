@@ -94,5 +94,46 @@
             "sent": "Deine E-Mail wurde erfolgreich versendet.<br>Möchtest du eine weitere schreiben?",
             "newEmail": "Neue E-Mail"
         }
+    },
+    "privacy": {
+        "title": "Datenschutzerklärung",
+        "sections": {
+            "general": {
+                "title": "1. Allgemeine Hinweise",
+                "text": "Der Schutz deiner persönlichen Daten ist mir ein besonderes Anliegen. Ich behandle deine personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Die Nutzung meiner Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, E-Mail-Adresse) erhoben werden, erfolgt dies – soweit möglich – stets auf freiwilliger Basis."
+            },
+            "controller": {
+                "title": "2. Verantwortlicher",
+                "text": "Name: Dein Vorname Nachname\nAnschrift: Essen, Deutschland\nE-Mail: deine@email.de"
+            },
+            "dataCollection": {
+                "title": "3. Erhebung und Speicherung personenbezogener Daten",
+                "text": "Ich speichere nur dann personenbezogene Daten, wenn du mir diese über das Kontaktformular oder per E-Mail mitteilst. Diese Daten werden ausschließlich zur Bearbeitung deiner Anfrage verwendet und nicht an Dritte weitergegeben.\n\nErfasst werden können:\n- Name\n- E-Mail-Adresse\n- Nachrichtentext"
+            },
+            "logfiles": {
+                "title": "4. Server-Logfiles",
+                "text": "Der Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Logfiles, die dein Browser automatisch übermittelt. Dies sind z. B.:\n- Browsertyp und -version\n- verwendetes Betriebssystem\n- Referrer URL\n- Hostname des zugreifenden Rechners\n- Uhrzeit der Serveranfrage\n\nDiese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen."
+            },
+            "cookies": {
+                "title": "5. Cookies",
+                "text": "Meine Website verwendet keine Cookies zur Nutzerverfolgung oder Analyse."
+            },
+            "rights": {
+                "title": "6. Rechte der betroffenen Person",
+                "text": "Du hast jederzeit das Recht auf:\n- Auskunft über deine gespeicherten Daten\n- Berichtigung unrichtiger Daten\n- Löschung oder Einschränkung der Verarbeitung\n- Widerruf einer erteilten Einwilligung\n- Beschwerde bei der zuständigen Aufsichtsbehörde"
+            },
+            "form": {
+                "title": "7. Kontaktformular",
+                "text": "Wenn du mir per Kontaktformular Anfragen sendest, werden deine Angaben aus dem Formular inklusive der von dir dort angegebenen Kontaktdaten zwecks Bearbeitung gespeichert. Diese Daten gebe ich nicht ohne deine Einwilligung weiter."
+            },
+            "ssl": {
+                "title": "8. SSL-Verschlüsselung",
+                "text": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte eine SSL-Verschlüsselung."
+            },
+            "changes": {
+                "title": "9. Änderungen dieser Datenschutzerklärung",
+                "text": "Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder Änderungen meiner Leistungen berücksichtigt."
+            }
+        }
     }
 }

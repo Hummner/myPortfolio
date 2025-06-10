@@ -94,5 +94,46 @@
             "sent": "Your email has been sent successfully.<br>Would you like to send another one?",
             "newEmail": "New Email"
         }
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "sections": {
+            "general": {
+                "title": "1. General Information",
+                "text": "Protecting your personal data is very important to me. I treat your personal data confidentially and in accordance with data protection laws and this privacy policy. Using this website is generally possible without providing personal data. If personal data (such as name or email address) is collected, it is always done on a voluntary basis whenever possible."
+            },
+            "controller": {
+                "title": "2. Controller",
+                "text": "Name: Your Firstname Lastname\nAddress: Essen, Germany\nEmail: your@email.com"
+            },
+            "dataCollection": {
+                "title": "3. Collection and Storage of Personal Data",
+                "text": "I only store personal data if you provide it via the contact form or by email. This data will only be used to process your request and will not be shared with third parties.\n\nMay include:\n- Name\n- Email address\n- Message text"
+            },
+            "logfiles": {
+                "title": "4. Server Log Files",
+                "text": "The website provider automatically collects and stores information in so-called server log files, which your browser automatically transmits. These include:\n- Browser type and version\n- Operating system used\n- Referrer URL\n- Hostname of the accessing computer\n- Time of the server request\n\nThis data cannot be assigned to specific individuals. No combination with other data sources is made."
+            },
+            "cookies": {
+                "title": "5. Cookies",
+                "text": "This website does not use cookies for tracking or analytics."
+            },
+            "rights": {
+                "title": "6. Your Rights",
+                "text": "You have the right to:\n- Access your stored data\n- Correct inaccurate data\n- Delete or restrict the processing of your data\n- Revoke any given consent\n- File a complaint with the relevant supervisory authority"
+            },
+            "form": {
+                "title": "7. Contact Form",
+                "text": "If you send me inquiries via the contact form, your information from the form, including the contact details you provided, will be stored for the purpose of processing your request. This data will not be shared without your consent."
+            },
+            "ssl": {
+                "title": "8. SSL Encryption",
+                "text": "This site uses SSL encryption for security reasons and to protect the transmission of confidential content."
+            },
+            "changes": {
+                "title": "9. Changes to This Privacy Policy",
+                "text": "I reserve the right to occasionally update this privacy policy to comply with legal requirements or reflect changes to my services."
+            }
+        }
     }
 }

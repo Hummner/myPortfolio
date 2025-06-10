@@ -23,6 +23,10 @@ a.active::after {
     left: 0;
 }
 
+a:hover {
+    color: #70E61C;
+}
+
 .content {
     padding: 40px 100px 64px;
     width: 100%;
@@ -62,6 +66,24 @@ a.active::after {
     }
 }
 
+.button-small-mobile {
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    &:hover {
+        color: #70E61C !important;
+    }
+}
+
+.mobile-translate-buttons {
+    display: flex;
+    gap: 12px;
+    >span {
+        color: white;
+        font-size: 23px;
+    }
+}
+
 .active-small {
     background-color: #70E61C;
     font-weight: 700;
@@ -73,6 +95,10 @@ a.active::after {
         border: 2px solid #70E61C !important;
         transform: scale(1) !important;
     }
+}
+
+.active-small-mobile {
+    color: #70E61C;
 }
 
 .language {

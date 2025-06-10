@@ -11,8 +11,8 @@
             </div>
             @if (sentEmail) {
             <div class="user-feedback">
-                <span class="sent-email-feedback">{{ "contact.feedback.sent" | translate}}</span>
-                <button (click)="newEmail()" class="button-green">{{ "contact.newEmail" | translate}}</button>
+                <span [innerHTML]="'contact.feedback.sent' | translate" class="sent-email-feedback"></span>
+                <button (click)="newEmail()" class="button-green">{{ "contact.feedback.newEmail" | translate}}</button>
             </div>
 
             }@else {
@@ -20,7 +20,7 @@
                 <div class="contact-label">
                     <label [ngClass]="{'invalid':name.invalid && (name.touched || trySubmit), 'valid': name.valid}"
                         class="input-label" for="name">
-                        <input [(ngModel)]="contactData.name" placeholder="{{ 'contact.placeholders.name' | translate }}" name="name" minlength="4"
+                        <input [(ngModel)]="contactData.name" placeholder="{{ 'contact.placeholders.name' | translate }}" name="name" minlength="3"
                             type="text" [ngModelOptions]="{ updateOn: 'blur' }" id="name" required #name="ngModel">
                     </label>
                     <span>@if (name.invalid && (name.touched || trySubmit)) {
@@ -74,7 +74,7 @@
                         <input id="checkbox" name="checkbox" #checkbox="ngModel" required [(ngModel)]="isChecked"
                             type="checkbox">
                     </div>
-                    <p>{{ "contact.privacyText" | translate}}</p>
+                    <p [innerHTML]="'contact.privacyText' | translate"></p>
                     <span>@if ((checkbox.touched || trySubmit) && checkbox.invalid) {
                         {{ "contact.validation.checkboxRequired" | translate}}
                         }</span>
@@ -89,6 +89,9 @@
 
 
             </form>}
+        </div>
+        <div class="scroll-back">
+            <a href="#home"><img class="image-button" src="assets/icons/4. Go up button.png" alt=""></a>
         </div>
 
     </div>

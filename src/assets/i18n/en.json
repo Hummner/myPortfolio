@@ -88,7 +88,7 @@
             "messageMinlength": "Min. 10 characters!",
             "checkboxRequired": "Please accept the privacy policy."
         },
-        "privacyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
+        "privacyText": "I've read the <a class='privacy' href='/privacy-policy'>privacy policy</a> and agree to the processing of my data as outlined.",
         "submit": "Send Message :)",
         "feedback": {
             "sent": "Your email has been sent successfully.<br>Would you like to send another one?",
@@ -104,7 +104,7 @@
             },
             "controller": {
                 "title": "2. Controller",
-                "text": "Name: Your Firstname Lastname\nAddress: Essen, Germany\nEmail: your@email.com"
+                "text": "Name: Bence Cservenyak \nAddress: Sälzerstr. 101, 45143 Essen, Germany\nEmail: contact@bence-cservenyak.com"
             },
             "dataCollection": {
                 "title": "3. Collection and Storage of Personal Data",

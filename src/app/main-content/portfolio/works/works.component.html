@@ -14,8 +14,8 @@
       <p>{{ 'projects.' + key + '.description' | translate }}</p>
 
       <div class="works-buttons">
-        <button class="button-purple">{{ 'projectsButton.button' | translate }}</button>
-        <button class="button-transparent">Github</button>
+        <a target="_blank" href="{{ projectLinks[i]}}" class="button-purple">{{ 'projectsButton.button' | translate }}</a>
+        <a target="_blank" href="{{ githubLinks[i]}}" class="button-transparent">Github</a>
       </div>
     </div>
   </div>

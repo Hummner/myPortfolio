@@ -26,9 +26,18 @@
             <img class="close" (click)="burgerOpen()" src="assets/icons/close.png" alt="">
         </div>
         <div class="burger-content">
-            <a href="#about_me" [class.active]="activeSection === 'about_me'">About me</a>
-            <a href="#skills" [class.active]="activeSection === 'skills'">Skills</a>
-            <a href="#portfolio" [class.active]="activeSection === 'portfolio'">Portfolio</a>
+            <a href="#about_me" [class.active]="activeSection === 'about_me'" (click)="burgerOpen()">About me</a>
+            <a href="#skills" [class.active]="activeSection === 'skills'" (click)="burgerOpen()">Skills</a>
+            <a href="#portfolio" [class.active]="activeSection === 'portfolio'" (click)="burgerOpen()">Portfolio</a>
+            <div class="mobile-translate-buttons">
+                <span class="button-small-mobile" [class.active-small-mobile]="currentLang === 'de'" (click)="switchLanguage('de')">
+                    {{ "header.ge" | translate }}
+                </span>
+                <span> / </span>
+                <span class="button-small-mobile" [class.active-small-mobile]="currentLang === 'en'" (click)="switchLanguage('en')">
+                    {{ "header.en" | translate }}
+                </span>
+            </div>
         </div>
     </div>
 

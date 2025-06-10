@@ -19,6 +19,8 @@ section {
 
 }
 
+
+
 .contact-header {
     display: flex;
     justify-content: center;
@@ -69,6 +71,11 @@ section {
     border-radius: 10px;
     padding: 15px 25px;
 
+    &:hover {
+        border-color: #70E61C;
+        cursor: pointer;
+    }
+
 
     >input {
         width: 100%;
@@ -76,6 +83,8 @@ section {
         border: none;
         color: white;
         font-size: 21px;
+        user-select: none;
+        cursor: pointer;
 
         &:focus {
             outline: none;
@@ -97,6 +106,7 @@ section {
         font-size: 21px;
         resize: vertical;
         min-height: 60px;
+        cursor: pointer;
 
         &:focus {
             outline: none;
@@ -104,10 +114,41 @@ section {
     }
 }
 
-input:-internal-autofill-selected {
-    border: none !important;
-    background: none !important;
+.scroll-back {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    >a {
+        cursor: pointer;
+
+        >img:hover {
+            filter: brightness(0) saturate(100%) invert(77%) sepia(98%) saturate(1093%) hue-rotate(36deg) brightness(93%) contrast(93%);
+        }
+    }
 }
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #141D2F inset !important;
+    -webkit-text-fill-color: white !important;
+    font-size: 21px !important;
+    font-weight: 400 !important;
+    font-family: 'Poppins'
+}
+
+input:-webkit-autofill:focus {
+    font-size: 21px !important;
+}
+
+input:-webkit-autofill:hover {
+    -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill-selected {
+    font-size: 21px !important;
+}
+
 
 .invalid {
     border-color: red;

@@ -21,13 +21,19 @@ section {
     position: relative;
     align-items: flex-start;
 
-    >img {
-        width: 250px;
-    }
+
 
     >a {
         bottom: -32px;
+
+        >img {
+            width: 250px;
+        }
     }
+}
+
+a:hover {
+    color: #70E61C;
 }
 
 .copyright {

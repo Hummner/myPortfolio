@@ -101,11 +101,20 @@ section {
     align-items: center;
     gap: 24px;
 
-    >p {
-        color: white;
-        font-size: 21px;
+    >a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
 }
+
+.email {
+    color: white;
+    font-size: 21px;
+}
+
+
 
 .scroll-down {
     position: absolute;
@@ -262,10 +271,10 @@ section {
         right: 0;
         justify-content: center;
         bottom: 20px;
+    }
 
-        >p {
-            display: none;
-        }
+    .email {
+        display: none;
     }
 
     .name {

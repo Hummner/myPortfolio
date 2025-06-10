@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,7 @@ export class HeaderComponent {
   activeSection: string = '';
   currentLang = 'en';
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private router: Router) {
     translate.addLangs(['de', 'en']);
     this.currentLang = 'en';
     translate.setDefaultLang('en');
@@ -31,19 +32,28 @@ export class HeaderComponent {
 
 
   @HostListener('window:scroll', [])
-  onWindowScroll() {
-    const sections = ['home', 'about_me', 'skills', 'portfolio'];
-    for (let section of sections) {
-      const el = document.getElementById(section);
-      if (el) {
-        const rect = el.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 100) {
-          this.activeSection = section;
-          break;
-        }
+onWindowScroll() {
+  // Nur auf der Startseite oder bei Anker-Links scrollen wir aktiv
+  if (!this.router.url.includes('#')) {
+  this.activeSection = '';
+  return;
+}
+
+  const sections = ['home', 'about_me', 'skills', 'portfolio'];
+  for (let section of sections) {
+    const el = document.getElementById(section);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        this.activeSection = section;
+        return; // gefunden → fertig
       }
     }
   }
+
+  // Kein Abschnitt sichtbar → optional reset
+  this.activeSection = '';
+}
 
   switchLanguage(lang: 'de' | 'en') {
     this.currentLang = lang;

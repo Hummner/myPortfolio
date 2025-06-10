@@ -135,5 +135,25 @@
                 "text": "Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder Änderungen meiner Leistungen berücksichtigt."
             }
         }
+    },
+    "imprint": {
+        "title": "Impressum",
+        "responsible": {
+            "title": "Angaben gemäß § 5 TMG",
+            "name": "Bence Cservenyak",
+            "address": "Sälzerstr. 101, 45143 Essen, Deutschland",
+            "email": "contact@bence-cservenyak.com"
+        },
+        "disclaimer": {
+            "title": "Haftungsausschluss",
+            "text": "Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+        },
+        "copyright": {
+            "title": "Urheberrecht",
+            "text": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+        }
+    },
+     "footer" : {
+        "footerLink": "Impressum"
     }
 }

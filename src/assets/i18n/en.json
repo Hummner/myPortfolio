@@ -135,5 +135,25 @@
                 "text": "I reserve the right to occasionally update this privacy policy to comply with legal requirements or reflect changes to my services."
             }
         }
+    },
+    "imprint": {
+        "title": "Legal Notice",
+        "responsible": {
+            "title": "Information according to § 5 TMG",
+            "name": "Bence Cservenyak",
+            "address": "Sälzerstr. 101, 45143 Essen, Germany",
+            "email": "contact@bence-cservenyak.com"
+        },
+        "disclaimer": {
+            "title": "Disclaimer",
+            "text": "Despite careful content control, I assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+        },
+        "copyright": {
+            "title": "Copyright",
+            "text": "The content and works created by the site operator on these pages are subject to German copyright law. Third-party contributions are marked as such. Duplication, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
+        }
+    },
+    "footer" : {
+        "footerLink": "Legal Notice"
     }
 }

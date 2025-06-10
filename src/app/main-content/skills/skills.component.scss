@@ -54,18 +54,14 @@ section {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    cursor: pointer;
+    user-select: none;
 
     >img {
         height: 60px;
         width: 60px;
         transform: translateY(0px);
         transition: transform 125ms ease;
-        cursor: pointer;
-
-
-
-        ;
+        
     }
 
     >span {

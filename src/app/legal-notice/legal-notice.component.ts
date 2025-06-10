@@ -1,16 +1,14 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-legal-notice',
   standalone: true,
-  imports: [TranslateModule, RouterModule, CommonModule],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  imports: [TranslateModule],
+  templateUrl: './legal-notice.component.html',
+  styleUrl: './legal-notice.component.scss'
 })
-export class FooterComponent {
+export class LegalNoticeComponent {
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['de', 'en']);
@@ -22,6 +20,5 @@ export class FooterComponent {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(newLang);
   }
-
 
 }

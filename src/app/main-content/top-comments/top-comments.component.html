@@ -5,14 +5,14 @@
             
             <div class="container">
                 <div class="container-text">
-                    <p>{{ comments[this.currentComment].text }}</p>
+                    <p>{{ 'comments.' + comments[currentComment].key + '.text' | translate }}</p>
                 </div>
                 <div class="container-name">
                     <div class="placeholder">
                         <div></div>
                     </div>
 
-                    <p class="name">{{ comments[this.currentComment].name }}</p>
+                    <p class="name">{{ 'comments.' + comments[currentComment].key + '.name' | translate }}</p>
                 </div>
 
 

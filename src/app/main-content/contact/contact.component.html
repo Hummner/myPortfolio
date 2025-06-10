@@ -1,20 +1,18 @@
 <section>
     <div class="content">
         <div class="contact-header">
-            <h1>Contact</h1>
+            <h1>{{ 'contact.title' | translate }}</h1>
         </div>
         <div class="contact-main">
             <div class="text">
-                <h2>Got a problem to solve?</h2>
-                <p>If you're looking for a motivated Frontend Developer who's ready to bring value to your project, feel
-                    free to get in touch. I'm excited to contribute my skills and grow with a team that values quality,
-                    creativity, and collaboration.</p>
-                <p>Need a Frontend developer? <b>Contact me!</b></p>
+                <h2>{{ 'contact.heading' | translate }}</h2>
+                <p>{{ 'contact.text1' | translate }}</p>
+                <p [innerHTML]="'contact.text2' | translate"></p>
             </div>
             @if (sentEmail) {
             <div class="user-feedback">
-                <span class="sent-email-feedback">"Your email has been sent successfully. <br>Would you like to send another one?"</span>
-                <button (click)="newEmail()" class="button-green">New Email</button>
+                <span class="sent-email-feedback">{{ "contact.feedback.sent" | translate}}</span>
+                <button (click)="newEmail()" class="button-green">{{ "contact.newEmail" | translate}}</button>
             </div>
 
             }@else {
@@ -22,14 +20,14 @@
                 <div class="contact-label">
                     <label [ngClass]="{'invalid':name.invalid && (name.touched || trySubmit), 'valid': name.valid}"
                         class="input-label" for="name">
-                        <input [(ngModel)]="contactData.name" placeholder="Your name..." name="name" minlength="4"
+                        <input [(ngModel)]="contactData.name" placeholder="{{ 'contact.placeholders.name' | translate }}" name="name" minlength="4"
                             type="text" [ngModelOptions]="{ updateOn: 'blur' }" id="name" required #name="ngModel">
                     </label>
                     <span>@if (name.invalid && (name.touched || trySubmit)) {
                         @if (name.errors?.['required']) {
-                        Your name is required.
+                        {{ "contact.validation.nameRequired" | translate}}
                         }@else if (name.errors?.['minlength']) {
-                        Minimum 3 charachter!
+                        {{ "contact.validation.nameMinlength" | translate}}
                         }
                         }
                     </span>
@@ -37,15 +35,15 @@
                 <div class="contact-label">
                     <label [ngClass]="{'invalid':email.invalid && (email.touched || trySubmit), 'valid': email.valid}"
                         class="input-label" for="email">
-                        <input [(ngModel)]="contactData.email" name="email" placeholder="Your email..." type="text"
+                        <input [(ngModel)]="contactData.email" name="email" placeholder="{{ 'contact.placeholders.email' | translate }}" type="text"
                             [ngModelOptions]="{ updateOn: 'blur' }" required id="email" #email="ngModel"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     </label>
                     <span>@if (email.invalid && (email.touched || trySubmit)) {
                         @if(contactData.email == "") {
-                        Your email is required.
+                        {{ "contact.validation.emailRequired" | translate}}
                         }@else {
-                        Please enter a valid email!
+                        {{ "contact.validation.emailInvalid" | translate}}
                         }
                         }
                     </span>
@@ -56,14 +54,14 @@
                         class="input-label" for="message">
                         <textarea [(ngModel)]="contactData.message" name="message" required
                             [ngModelOptions]="{ updateOn: 'blur' }" id="message" minlength="10"
-                            placeholder="Your message..." #message="ngModel">
+                            placeholder="{{ 'contact.placeholders.message' | translate }}" #message="ngModel">
                         </textarea>
                     </label>
                     <span>@if (message.invalid && (message.touched || trySubmit)) {
                         @if(contactData.message == "") {
-                        Your message is empty.
+                        {{ "contact.validation.messageRequired" | translate}}
                         }@else {
-                        Min. 10 charachter!
+                        {{ "contact.validation.messageMinlength" | translate}}
                         }
                         }
                     </span>
@@ -76,11 +74,9 @@
                         <input id="checkbox" name="checkbox" #checkbox="ngModel" required [(ngModel)]="isChecked"
                             type="checkbox">
                     </div>
-                    <p>I've read the
-                        privacy policy
-                        and agree to the processing of my data as outlined.</p>
+                    <p>{{ "contact.privacyText" | translate}}</p>
                     <span>@if ((checkbox.touched || trySubmit) && checkbox.invalid) {
-                        Please accept the privacy policy.
+                        {{ "contact.validation.checkboxRequired" | translate}}
                         }</span>
                 </div>
 
@@ -88,7 +84,7 @@
 
 
                 <button [ngClass]="{'button-disabled': !contactForm.valid}" class="button-green submit-button">
-                    SendMessage :)
+                    {{ "contact.submit" | translate}}
                 </button>
 
 

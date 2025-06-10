@@ -2,17 +2,18 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
 
-sentEmailUserFeddback = false;
+  sentEmailUserFeddback = false;
   isChecked = false;
   sentEmail = false;
 
@@ -40,6 +41,17 @@ sentEmailUserFeddback = false;
       },
     },
   };
+
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['de', 'en']);
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
+
+  switchLanguage() {
+    const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
+    this.translate.use(newLang);
+  }
 
   onSubmit(ngForm: NgForm) {
     this.trySubmit = true;

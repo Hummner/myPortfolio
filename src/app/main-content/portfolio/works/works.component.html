@@ -1,16 +1,22 @@
 <section>
-    <div class="project" *ngFor = "let work of project; let i = index" [ngClass]="{reverse : i % 2 !== 0}">
-        <div class="image-section">
-            <img class="works-image" [src]="'assets/img/laptop_' + i + '.png'" alt="">
-        </div>
-        <div class="text-section">
-            <h2>{{ work.title}}</h2>
-            <h3>{{ work.subtitle}}</h3>
-            <p>{{ work.description}}</p>
-            <div class="works-buttons">
-                <button class="button-purple">Live Test</button>
-                <button class="button-transparent">Github</button>
-            </div>
-        </div>
+  <div
+    class="project"
+    *ngFor="let key of projectKeys; let i = index"
+    [ngClass]="{ reverse: i % 2 !== 0 }"
+  >
+    <div class="image-section">
+      <img class="works-image" [src]="'assets/img/laptop_' + i + '.png'" alt="">
     </div>
+
+    <div class="text-section">
+      <h2>{{ 'projects.' + key + '.title' | translate }}</h2>
+      <h3>{{ 'projects.' + key + '.subtitle' | translate }}</h3>
+      <p>{{ 'projects.' + key + '.description' | translate }}</p>
+
+      <div class="works-buttons">
+        <button class="button-purple">{{ 'projectsButton.button' | translate }}</button>
+        <button class="button-transparent">Github</button>
+      </div>
+    </div>
+  </div>
 </section>

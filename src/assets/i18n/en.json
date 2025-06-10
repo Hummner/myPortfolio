@@ -1,0 +1,98 @@
+{
+    "header": {
+        "aboutMe": "About me",
+        "ge": "GE",
+        "en": "EN"
+    },
+    "hero": {
+        "letsTalk": "Let's Talk!",
+        "scroll": "Scroll down"
+    },
+    "aboutMe": {
+        "title": "About me",
+        "intro": "I've been a tech lover since childhood, and coding has always been my dream job. What excites me most about programming is the ability to bring ideas to life and solve real-world problems through technology. My passion for continuous learning and curiosity about how things work drive me to constantly improve my skills and stay up to date with new tools and technologies.",
+        "location": "I'm based in Essen, Germany. I'm open to different ways of working, including remote work and relocation, depending on the opportunity and team.",
+        "learning": "I'm always excited to learn new things and gain more experience. In the IT field, it's essential to stay up to date—and that mindset fits me perfectly. I'm open-minded, curious, and always looking for opportunities to grow and improve my skills.",
+        "problemSolving": "I approach challenges with a mix of logic and creativity. I see obstacles as learning opportunities and stay persistent in finding clean, effective solutions. Collaboration, curiosity, and analytical thinking are key to how I solve problems in coding."
+    },
+    "skills": {
+        "title": "My skills",
+        "intro": "Here’s a look at the front-end technologies I’ve worked with so far. Through each project, I’ve deepened my understanding and learned how to apply these tools effectively to create engaging and functional user interfaces.",
+        "lookingFor": "Looking for",
+        "anotherSkill": "another skill",
+        "learningText": "I'm always looking to expand my skill set and explore new technologies. Frameworks like Vue.js or React.js really interest me because they offer powerful ways to build modern, interactive web applications. I'm also excited to dive deeper into backend development to better understand the full picture of web applications and become a more well-rounded developer.",
+        "getInTouch": "Get in touch",
+        "tooltip": {
+            "title": "I have a special interest in learning"
+        }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "intro": "Explore a selection of my work here - Interact with projects to see my skills in action."
+    },
+    "projects": {
+        "join": {
+            "title": "Join",
+            "subtitle": "JavaScript | CSS | HTML",
+            "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        },
+        "sharkie": {
+            "title": "Sharkie",
+            "subtitle": "JavaScript | CSS | HTML",
+            "description": "A simple Jump-and-Run game based on an object-oriented approach. Help Sharkie find coins and poison bottles to fight the killer whale."
+        },
+        "crm": {
+            "title": "Simple CRM",
+            "subtitle": "Angular | Firebase",
+            "description": "A very simple Customer Relationship Management system working with CRUD functionality."
+        },
+        "pokedex": {
+            "title": "Pokédex",
+            "subtitle": "JavaScript | HTML | CSS | API",
+            "description": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+        }
+    },
+    "projectsButton": {
+        "button": "Live Test"
+    },
+    "comments": {
+        "comment1": {
+            "text": "Bence really kept the team together with his great organization and clear communication. We wouldn't have got this far without his commitment.",
+            "name": "V. Schuster - Team Partner"
+        },
+        "comment2": {
+            "text": "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+            "name": "E.Eichinger - Team Partner"
+        },
+        "comment3": {
+            "text": "It was a great pleasure to work with Bence. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
+            "name": "I.Nuber - Frontend Engineer"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "heading": "Got a problem to solve?",
+        "text1": "If you're looking for a motivated Frontend Developer who's ready to bring value to your project, feel free to get in touch. I'm excited to contribute my skills and grow with a team that values quality, creativity, and collaboration.",
+        "text2": "Need a Frontend developer? <b>Contact me!</b>",
+        "placeholders": {
+            "name": "Your name...",
+            "email": "Your email...",
+            "message": "Your message..."
+        },
+        "validation": {
+            "nameRequired": "Your name is required.",
+            "nameMinlength": "Minimum 3 characters!",
+            "emailRequired": "Your email is required.",
+            "emailInvalid": "Please enter a valid email!",
+            "messageRequired": "Your message is empty.",
+            "messageMinlength": "Min. 10 characters!",
+            "checkboxRequired": "Please accept the privacy policy."
+        },
+        "privacyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
+        "submit": "Send Message :)",
+        "feedback": {
+            "sent": "Your email has been sent successfully.<br>Would you like to send another one?",
+            "newEmail": "New Email"
+        }
+    }
+}

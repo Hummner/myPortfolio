@@ -1,22 +1,34 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
   isMenuOpen = false;
+  activeSection: string = '';
+  currentLang = 'en';
+
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['de', 'en']);
+    this.currentLang = 'en';
+    translate.setDefaultLang('en');
+    translate.use('en'); // ← immer EN beim Start
+  }
+
+
 
   burgerOpen() {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
-  activeSection: string = '';
+
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
@@ -31,6 +43,11 @@ export class HeaderComponent {
         }
       }
     }
+  }
+
+  switchLanguage(lang: 'de' | 'en') {
+    this.currentLang = lang;
+    this.translate.use(lang);
   }
 
 }

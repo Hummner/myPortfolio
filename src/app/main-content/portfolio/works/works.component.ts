@@ -1,38 +1,30 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-works',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './works.component.html',
   styleUrl: './works.component.scss'
 })
 export class WorksComponent {
   images = ["laptop_0"];
-  project = [
-    {
-      title: "Join",
-      subtitle : "JavaScript | CSS | HTML",
-      description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. "
-    },
-    {
-      title: "Sharkie",
-      subtitle : "JavaScript | CSS | HTML",
-      description: "A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale. "
-    },
-    {
-      title: "Simple CRM",
-      subtitle : "Angular | Firebase",
-      description: "A very Simple Customer Relationship Management system working with CRUD functionality. "
-    },
-    {
-      title: "Pokédex",
-      subtitle : "JavaScript | HTML | CSS | Api",
-      description: "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
-    },
+  projectKeys = ['join', 'sharkie', 'crm', 'pokedex'];
 
-  ]
+  constructor(private translate: TranslateService) {
+    translate.addLangs(['de', 'en']);
+    translate.setDefaultLang('en');
+    translate.use('en');
+  }
+
+  switchLanguage() {
+    const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
+    this.translate.use(newLang);
+  }
+
+
 
 
 }

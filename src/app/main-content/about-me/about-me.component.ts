@@ -24,7 +24,7 @@ export class AboutMeComponent implements AfterViewInit, AfterViewChecked {
 
 
   ngAfterViewInit() {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 125, once: true });
     this.aosInitialized = true;
   }
 

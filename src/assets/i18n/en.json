@@ -86,7 +86,8 @@
             "emailInvalid": "Please enter a valid email!",
             "messageRequired": "Your message is empty.",
             "messageMinlength": "Min. 10 characters!",
-            "checkboxRequired": "Please accept the privacy policy."
+            "checkboxRequired": "Please accept the privacy policy.",
+            "noLeadingWhitespace" : "The name must not start with a space."
         },
         "privacyText": {
             "text1" : "I've read the ",

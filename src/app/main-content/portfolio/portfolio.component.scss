@@ -13,7 +13,7 @@ section {
     align-items: center;
     flex-direction: column;
     position: relative;
-    padding: 100px 100px;
+    padding: 80px 100px;
     z-index: 2;
 }
 
@@ -35,7 +35,7 @@ span {
 .placeholder {
     position: absolute;
     height: 3px;
-    top: 160px;
+    top: 140px;
     right: 0;
     left: calc(50% + 200px);
     background-color: #9747FF;
@@ -44,7 +44,7 @@ span {
 .placeholder-small {
     position: absolute;
     height: 3px;
-    top: 160px;
+    top: 140px;
     width: 100px;
     left: calc(50% - 300px);
     background-color: #9747FF;
@@ -58,17 +58,17 @@ span {
 
 @media (max-width: 920px) {
     .content {
-        padding: 100px 50px;
+        padding: 80px 50px;
     }
 
     .placeholder {
-        top: 140px;
+        top: 120px;
         left: calc(50% + 140px);
     }
 
     .placeholder-small {
         left: calc(50% - 240px);
-        top: 140px;
+        top: 120px;
     }
 
     .shadow {
@@ -79,17 +79,17 @@ span {
 
 @media (max-width: 500px) {
     .content {
-        padding: 100px 16px;
+        padding: 80px 16px;
     }
 
     .placeholder {
-        top: 129px;
+        top: 109px;
         left: calc(50% + 109px);
     }
 
     .placeholder-small {
         left: calc(50% - 142px);
-        top: 131px;
+        top: 111px;
         width: 34px;
     }
 }

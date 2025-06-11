@@ -16,7 +16,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 100px;
+    padding: 50px 100px;
     overflow-x: hidden;
     position: relative;
     z-index: 5;
@@ -69,7 +69,6 @@ section {
         border-radius: 100%;
         border: 3px solid #70E61C;
     }
-
 }
 
 .placeholder-horizontal {
@@ -99,7 +98,6 @@ section {
         right: -480px;
         top: 10%;
     }
-
 }
 
 @media (max-width: 1200px) {
@@ -115,25 +113,23 @@ section {
     }
 }
 
-
 @media (max-width:920px) {
     .about-me-img {
         display: none;
     }
 
     .content {
-        padding: 100px 50px;
+        padding: 50px 50px;
     }
 
     .about-me-text {
         width: 100%;
     }
-
 }
 
 @media (max-width: 500px) {
     .content {
-        padding: 100px 16px;
+        padding: 50px 16px;
     }
 
     .about-me-list {

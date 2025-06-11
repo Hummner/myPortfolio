@@ -19,7 +19,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 100px 100px;
+    padding: 80px 100px;
     gap: 24px;
     position: relative;
     z-index: 2;
@@ -101,7 +101,7 @@ h2 {
     position: absolute;
     right: 0;
     left: calc(50% + 888px);
-    top: 160px;
+    top: 140px;
     height: 3px;
     background-color: #9747FF;
 
@@ -206,7 +206,7 @@ h2 {
     .content {
         flex-direction: column;
         gap: 50px;
-        padding: 100px 50px;
+        padding: 80px 50px;
         overflow-x: hidden;
     }
 
@@ -221,7 +221,7 @@ h2 {
     }
 
     .placeholder-horizontal {
-        top: 137px;
+        top: 117px;
         width: 40px;
     }
 
@@ -242,7 +242,7 @@ h2 {
 
 @media (max-width: 500px) {
     .content {
-        padding: 100px 16px;
+        padding: 80px 16px;
     }
 
     .icon {
@@ -250,16 +250,14 @@ h2 {
             width: 48px;
             height: 48px;
         }
-
     }
 
     .shadow {
         left: -500px;
-
     }
 
     .placeholder-horizontal {
-        top: 132px;
+        top: 112px;
         width: 11px;
     }
 }

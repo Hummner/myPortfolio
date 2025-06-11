@@ -1,14 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, Input, Output, EventEmitter } from '@angular/core';
-import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { FormsModule, NgForm, NgModel, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { NoLeadingWhitespaceDirective } from './no-leading-whitespace.directive'; 
+
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule, NoLeadingWhitespaceDirective],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -63,7 +65,8 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => {this.sentEmail = true},
+          complete: () => {
+            this.sentEmail = true},
         });
       this.trySubmit = false;
       
@@ -79,6 +82,7 @@ export class ContactComponent {
 
   newEmail() {
     this.sentEmail = false;
-    this.trySubmit = true;
+    this.trySubmit = false;
   };
+
 }

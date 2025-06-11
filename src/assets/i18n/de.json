@@ -86,7 +86,8 @@
             "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein!",
             "messageRequired": "Deine Nachricht darf nicht leer sein.",
             "messageMinlength": "Mindestens 10 Zeichen!",
-            "checkboxRequired": "Bitte stimme der Datenschutzerklärung zu."
+            "checkboxRequired": "Bitte stimme der Datenschutzerklärung zu.",
+            "noLeadingWhitespace": "Der Name darf nicht mit einem Leerzeichen beginnen."
         },
         "privacyText": {
             "text1" : "Ich habe die ",

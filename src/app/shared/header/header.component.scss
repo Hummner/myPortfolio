@@ -1,5 +1,5 @@
 section {
-    height: 100px;
+    height: 80px;
     background-color: #141D2F;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ a:hover {
 }
 
 .content {
-    padding: 40px 100px 64px;
+    padding: 40px 100px 40px;
     width: 100%;
     max-width: 1920px;
     display: flex;
@@ -65,6 +65,7 @@ a:hover {
     color: white;
     font-size: 23px;
     cursor: pointer;
+
     &:hover {
         color: #70E61C !important;
     }
@@ -73,6 +74,7 @@ a:hover {
 .mobile-translate-buttons {
     display: flex;
     gap: 12px;
+
     >span {
         color: white;
         font-size: 23px;
@@ -170,7 +172,7 @@ a:hover {
 
 @media (max-width: 920px) {
     .content {
-        padding: 100px 50px;
+        padding: 50px 50px;
     }
 }
 
@@ -191,5 +193,9 @@ a:hover {
 @media (max-width: 500px) {
     .content {
         padding: 50px 16px;
+    }
+
+    .burger-menu {
+        padding: 0 16px;
     }
 }

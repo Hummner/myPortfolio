@@ -20,12 +20,15 @@
                     <label [ngClass]="{'invalid':name.invalid && (name.touched || trySubmit), 'valid': name.valid}"
                         class="input-label" for="name">
                         <input [(ngModel)]="contactData.name"
-                            placeholder="{{ 'contact.placeholders.name' | translate }}" name="name" minlength="3"
-                            type="text" [ngModelOptions]="{ updateOn: 'blur' }" id="name" required #name="ngModel">
+                            placeholder="{{ 'contact.placeholders.name' | translate }}" noLeadingWhitespace name="name"
+                            minlength="3" type="text" [ngModelOptions]="{ updateOn: 'blur' }" id="name" required
+                            #name="ngModel">
                     </label>
                     <span>@if (name.invalid && (name.touched || trySubmit)) {
                         @if (name.errors?.['required']) {
                         {{ "contact.validation.nameRequired" | translate}}
+                        }@else if (name.errors?.['leadingWhitespace']) {
+                        {{ "contact.validation.noLeadingWhitespace" | translate }}
                         }@else if (name.errors?.['minlength']) {
                         {{ "contact.validation.nameMinlength" | translate}}
                         }
@@ -35,7 +38,7 @@
                 <div class="contact-label">
                     <label [ngClass]="{'invalid':email.invalid && (email.touched || trySubmit), 'valid': email.valid}"
                         class="input-label" for="email">
-                        <input [(ngModel)]="contactData.email" name="email"
+                        <input [(ngModel)]="contactData.email" name="email" noLeadingWhitespace
                             placeholder="{{ 'contact.placeholders.email' | translate }}" type="text"
                             [ngModelOptions]="{ updateOn: 'blur' }" required id="email" #email="ngModel"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
@@ -43,6 +46,8 @@
                     <span>@if (email.invalid && (email.touched || trySubmit)) {
                         @if(contactData.email == "") {
                         {{ "contact.validation.emailRequired" | translate}}
+                        }@else if(name.errors?.['leadingWhitespace']) {
+                        {{ "contact.validation.noLeadingWhitespace" | translate }}
                         }@else {
                         {{ "contact.validation.emailInvalid" | translate}}
                         }
@@ -53,7 +58,7 @@
                     <label
                         [ngClass]="{'invalid':message.invalid && (message.touched || trySubmit), 'valid': message.valid}"
                         class="input-label" for="message">
-                        <textarea [(ngModel)]="contactData.message" name="message" required
+                        <textarea [(ngModel)]="contactData.message" noLeadingWhitespace name="message" required
                             [ngModelOptions]="{ updateOn: 'blur' }" id="message" minlength="10"
                             placeholder="{{ 'contact.placeholders.message' | translate }}" #message="ngModel">
                         </textarea>
@@ -61,6 +66,8 @@
                     <span>@if (message.invalid && (message.touched || trySubmit)) {
                         @if(contactData.message == "") {
                         {{ "contact.validation.messageRequired" | translate}}
+                        }@else if (name.errors?.['leadingWhitespace']) {
+                            {{ "contact.validation.noLeadingWhitespace" | translate }}
                         }@else {
                         {{ "contact.validation.messageMinlength" | translate}}
                         }
@@ -74,7 +81,9 @@
                         <input id="checkbox" name="checkbox" #checkbox="ngModel" required [(ngModel)]="isChecked"
                             type="checkbox">
                     </div>
-                    <p>{{ "contact.privacyText.text1" | translate }}<a class='privacy' routerLink='/privacy-policy'>{{ "contact.privacyText.link" | translate }}</a>{{ "contact.privacyText.text2" | translate  }}</p>
+                    <p>{{ "contact.privacyText.text1" | translate }}<a class='privacy' routerLink='/privacy-policy'>{{
+                            "contact.privacyText.link" | translate }}</a>{{ "contact.privacyText.text2" | translate }}
+                    </p>
                     <span>@if ((checkbox.touched || trySubmit) && checkbox.invalid) {
                         {{ "contact.validation.checkboxRequired" | translate}}
                         }</span>

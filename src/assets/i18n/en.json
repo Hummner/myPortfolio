@@ -155,5 +155,10 @@
     },
     "footer" : {
         "footerLink": "Legal Notice"
+    },
+    "workInProg" : {
+        "title" : "Work in progress",
+        "text" : "This project is not yet finished. Development is ongoing, and more features and improvements will follow soon."
     }
+    
 }

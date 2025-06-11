@@ -15,8 +15,6 @@ section {
     flex-direction: column;
     position: relative;
     z-index: 2;
-
-
 }
 
 
@@ -31,8 +29,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
-
 }
 
 .text {
@@ -54,9 +50,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-
-
 }
 
 .shadow {
@@ -94,8 +87,6 @@ section {
             border: none;
             background-color: transparent;
         }
-
-
     }
 
     >textarea {
@@ -175,7 +166,6 @@ input:-webkit-autofill-selected {
     right: 30px;
     top: 20px;
 }
-
 
 
 ::placeholder {
@@ -287,7 +277,6 @@ form {
     text-align: center;
     padding: 16px 24px;
     font-size: 20px;
-
 }
 
 .user-feedback {
@@ -371,7 +360,6 @@ form {
         >textarea {
             font-size: 16px;
         }
-
     }
 
     .invalid::after {

@@ -1,16 +1,15 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-work-in-progress',
   standalone: true,
-  imports: [TranslateModule, RouterModule, CommonModule],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.scss'
+  imports: [TranslateModule],
+  templateUrl: './work-in-progress.component.html',
+  styleUrl: './work-in-progress.component.scss'
 })
-export class FooterComponent {
+export class WorkInProgressComponent {
+
   constructor(private translate: TranslateService) {
     translate.addLangs(['de', 'en']);
     translate.setDefaultLang('en');
@@ -22,4 +21,5 @@ export class FooterComponent {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(newLang);
   }
+
 }

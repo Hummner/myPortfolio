@@ -2,7 +2,6 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    ;
     position: relative;
 }
 
@@ -75,7 +74,6 @@ section {
 
 .icon:hover>img {
     transform: translateY(-20px);
-    ;
 }
 
 h1,
@@ -240,9 +238,6 @@ h2 {
         left: -83px;
         top: -205px;
     }
-
-
-
 }
 
 @media (max-width: 500px) {
@@ -257,7 +252,6 @@ h2 {
         }
 
     }
-
 
     .shadow {
         left: -500px;

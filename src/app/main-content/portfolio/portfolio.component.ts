@@ -16,10 +16,10 @@ export class PortfolioComponent {
     translate.setDefaultLang('en');
     translate.use('en');
   }
+  
 
   switchLanguage() {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(newLang);
   }
-
 }

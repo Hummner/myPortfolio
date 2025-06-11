@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ImprintComponent } from './imprint.component';
+import { WorkInProgressComponent } from './work-in-progress.component';
 
-describe('ImprintComponent', () => {
-  let component: ImprintComponent;
-  let fixture: ComponentFixture<ImprintComponent>;
+describe('WorkInProgressComponent', () => {
+  let component: WorkInProgressComponent;
+  let fixture: ComponentFixture<WorkInProgressComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ImprintComponent]
+      imports: [WorkInProgressComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ImprintComponent);
+    fixture = TestBed.createComponent(WorkInProgressComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

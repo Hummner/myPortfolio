@@ -2,7 +2,6 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-
     position: relative;
 }
 
@@ -54,7 +53,6 @@ span {
 @media (max-width:1920px) {
     .shadow {
         left: -200px;
-
     }
 }
 
@@ -94,10 +92,6 @@ span {
         top: 131px;
         width: 34px;
     }
-
-
-
-
 }
 
 @media (max-width: 350px) {

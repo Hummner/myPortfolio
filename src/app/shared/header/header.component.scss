@@ -4,7 +4,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 a.active {
@@ -35,19 +34,15 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 
-
-
     >nav {
         display: flex;
         gap: 24px;
     }
-
 }
 
 .logo {
     width: 150px;
 }
-
 
 .button-small {
     border: 2px solid #70E61C;
@@ -98,7 +93,7 @@ a:hover {
 }
 
 .active-small-mobile {
-    color: #70E61C;
+    color: #70E61C !important;
 }
 
 .language {
@@ -167,7 +162,6 @@ a:hover {
     cursor: pointer;
 }
 
-
 @media (max-width: 1000px) {
     .language {
         margin-left: 50px;
@@ -178,8 +172,6 @@ a:hover {
     .content {
         padding: 100px 50px;
     }
-
-
 }
 
 @media (max-width: 786px) {
@@ -200,6 +192,4 @@ a:hover {
     .content {
         padding: 50px 16px;
     }
-
-
 }

@@ -155,5 +155,10 @@
     },
      "footer" : {
         "footerLink": "Impressum"
+    },
+    "workInProg" : {
+        "title" : "Projekt im Aufbau",
+        "text" : "Dieses Projekt ist noch nicht fertiggestellt. Die Entwicklung ist im Gange und weitere Funktionen sowie Optimierungen werden in Kürze folgen."
     }
+    
 }

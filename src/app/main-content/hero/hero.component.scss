@@ -27,7 +27,6 @@ section {
     justify-content: center;
     max-height: 1000px;
     min-height: 500px;
-
 }
 
 .placeholder-horizontal {
@@ -106,7 +105,6 @@ section {
         justify-content: center;
         align-items: center;
     }
-
 }
 
 .email {
@@ -118,12 +116,6 @@ section {
 
     }
 }
-
-
-
-
-
-
 
 .scroll-down {
     position: absolute;
@@ -260,7 +252,6 @@ section {
         }
     }
 }
-
 
 @media(max-width: 786px) {
     .content {
@@ -404,11 +395,9 @@ section {
 
         .scroll-down {
             bottom: 65px;
-
         }
     }
 }
-
 
 @media (max-height: 600px) {
     @media (max-width: 800px) {

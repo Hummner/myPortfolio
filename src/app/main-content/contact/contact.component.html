@@ -14,13 +14,13 @@
                 <span [innerHTML]="'contact.feedback.sent' | translate" class="sent-email-feedback"></span>
                 <button (click)="newEmail()" class="button-green">{{ "contact.feedback.newEmail" | translate}}</button>
             </div>
-
             }@else {
             <form class="contact-field" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="contact-label">
                     <label [ngClass]="{'invalid':name.invalid && (name.touched || trySubmit), 'valid': name.valid}"
                         class="input-label" for="name">
-                        <input [(ngModel)]="contactData.name" placeholder="{{ 'contact.placeholders.name' | translate }}" name="name" minlength="3"
+                        <input [(ngModel)]="contactData.name"
+                            placeholder="{{ 'contact.placeholders.name' | translate }}" name="name" minlength="3"
                             type="text" [ngModelOptions]="{ updateOn: 'blur' }" id="name" required #name="ngModel">
                     </label>
                     <span>@if (name.invalid && (name.touched || trySubmit)) {
@@ -35,7 +35,8 @@
                 <div class="contact-label">
                     <label [ngClass]="{'invalid':email.invalid && (email.touched || trySubmit), 'valid': email.valid}"
                         class="input-label" for="email">
-                        <input [(ngModel)]="contactData.email" name="email" placeholder="{{ 'contact.placeholders.email' | translate }}" type="text"
+                        <input [(ngModel)]="contactData.email" name="email"
+                            placeholder="{{ 'contact.placeholders.email' | translate }}" type="text"
                             [ngModelOptions]="{ updateOn: 'blur' }" required id="email" #email="ngModel"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     </label>
@@ -66,7 +67,6 @@
                         }
                     </span>
                 </div>
-
                 <div class="privacy-input">
                     <div class="custom-checkbox">
                         <label for="checkbox"
@@ -79,21 +79,14 @@
                         {{ "contact.validation.checkboxRequired" | translate}}
                         }</span>
                 </div>
-
-
-
-
                 <button [ngClass]="{'button-disabled': !contactForm.valid}" class="button-green submit-button">
                     {{ "contact.submit" | translate}}
                 </button>
-
-
             </form>}
         </div>
         <div class="scroll-back">
             <a href="#home"><img class="image-button" src="assets/icons/4. Go up button.png" alt=""></a>
         </div>
-
     </div>
     <div class="placeholder"></div>
     <img class="shadow" src="assets/img/33. Purple shadow Footer.png" alt="">

@@ -15,9 +15,9 @@ export class AboutMeComponent {
     translate.use('en');
   }
 
+
   switchLanguage() {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(newLang);
   }
-
 }

@@ -2,17 +2,14 @@
   <div
     class="project"
     *ngFor="let key of projectKeys; let i = index"
-    [ngClass]="{ reverse: i % 2 !== 0 }"
-  >
+    [ngClass]="{ reverse: i % 2 !== 0 }">
     <div class="image-section">
       <img class="works-image" [src]="'assets/img/laptop_' + i + '.png'" alt="">
     </div>
-
     <div class="text-section">
       <h2>{{ 'projects.' + key + '.title' | translate }}</h2>
       <h3>{{ 'projects.' + key + '.subtitle' | translate }}</h3>
       <p>{{ 'projects.' + key + '.description' | translate }}</p>
-
       <div class="works-buttons">
         <a target="_blank" href="{{ projectLinks[i]}}" class="button-purple">{{ 'projectsButton.button' | translate }}</a>
         <a target="_blank" href="{{ githubLinks[i]}}" class="button-transparent">Github</a>

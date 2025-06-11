@@ -10,9 +10,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './top-comments.component.scss'
 })
 export class TopCommentsComponent {
-
   currentComment = 0;
-
   comments = [
     { key: 'comment1' },
     { key: 'comment2' },
@@ -34,6 +32,7 @@ export class TopCommentsComponent {
   nextComment() {
     this.currentComment = (this.currentComment + 1) % this.comments.length;
   }
+
 
   lastComment() {
     this.currentComment = (this.currentComment - 1 + this.comments.length) % this.comments.length;

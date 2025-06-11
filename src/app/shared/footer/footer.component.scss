@@ -4,7 +4,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .social-media {
@@ -20,8 +19,6 @@ section {
     justify-content: center;
     position: relative;
     align-items: flex-start;
-
-
 
     >a {
         bottom: -32px;
@@ -42,7 +39,6 @@ a:hover {
     >h2 {
         font-size: 23px;
     }
-
 }
 
 .legal-notice-mobile {
@@ -90,7 +86,6 @@ a:hover {
     .legal-notice-mobile {
         display: block;
     }
-
 }
 
 @media (max-width: 500px) {

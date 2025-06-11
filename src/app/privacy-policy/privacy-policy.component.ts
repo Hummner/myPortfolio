@@ -10,7 +10,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './privacy-policy.component.scss'
 })
 export class PrivacyPolicyComponent {
-
   sectionKeys = [
     'general',
     'controller',
@@ -29,10 +28,9 @@ export class PrivacyPolicyComponent {
     translate.use('en');
   }
 
+
   switchLanguage() {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(newLang);
   }
-
-
 }

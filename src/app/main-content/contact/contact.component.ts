@@ -12,24 +12,18 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
-  sentEmailUserFeddback = false;
-  isChecked = false;
-  sentEmail = false;
-
-  trySubmit = false;
-
+  sentEmailUserFeddback:boolean = false;
+  isChecked:boolean = false;
+  sentEmail:boolean = false;
+  trySubmit:boolean = false;
+  http = inject(HttpClient);
+  mailTest = false;
 
   contactData = {
     name: "",
     email: "",
     message: ""
-  }
-
-  http = inject(HttpClient);
-
-
-  mailTest = true;
+  };
 
   post = {
     endPoint: '/sendMail.php',
@@ -46,12 +40,14 @@ export class ContactComponent {
     translate.addLangs(['de', 'en']);
     translate.setDefaultLang('en');
     translate.use('en');
-  }
+  };
+
 
   switchLanguage() {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
     this.translate.use(newLang);
-  }
+  };
+
 
   onSubmit(ngForm: NgForm) {
     this.trySubmit = true;
@@ -59,6 +55,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.sentEmail = true;
 
             ngForm.resetForm();
           },
@@ -68,6 +65,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
       this.trySubmit = false;
+      
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
       ngForm.resetForm();
@@ -75,9 +73,11 @@ export class ContactComponent {
       this.sentEmail = true;
       this.trySubmit = false;
     }
-  }
+  };
+
 
   newEmail() {
     this.sentEmail = false;
-  }
+    this.trySubmit = true;
+  };
 }

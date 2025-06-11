@@ -10,7 +10,6 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-
   showDialog = false;
 
   constructor(private translate: TranslateService) {
@@ -18,6 +17,7 @@ export class SkillsComponent {
     translate.setDefaultLang('en');
     translate.use('en');
   }
+
 
   switchLanguage() {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';

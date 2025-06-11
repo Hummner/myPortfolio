@@ -56,29 +56,21 @@ section {
 
     >div {
         >h2 {
-
             text-align: right;
-
         }
 
         >h3 {
-
             text-align: right;
-
-
         }
 
         >p {
-
             text-align: right;
-
         }
     }
 
     .works-buttons {
         justify-content: flex-end;
     }
-
 }
 
 .works-buttons {
@@ -146,13 +138,7 @@ section {
             justify-content: center;
             gap: 24px;
         }
-
     }
-
-    
-
-
-
 }
 
 @media (max-width: 500px) {

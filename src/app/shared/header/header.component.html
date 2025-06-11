@@ -9,7 +9,6 @@
                 <span class="button-small" [class.active-small]="currentLang === 'de'" (click)="switchLanguage('de')">
                     {{ "header.ge" | translate }}
                 </span>
-
                 <span class="button-small" [class.active-small]="currentLang === 'en'" (click)="switchLanguage('en')">
                     {{ "header.en" | translate }}
                 </span>
@@ -18,7 +17,6 @@
         <div (click)="burgerOpen()" class="burger-icon" [ngClass]="{'d-none' : isMenuOpen}">
             <img src="assets/icons/burger.png" alt="">
         </div>
-
     </div>
     <div [ngClass]="{'slide-animation' : !isMenuOpen}" class="burger-menu slide-animation">
         <div class="burger-header">
@@ -40,5 +38,4 @@
             </div>
         </div>
     </div>
-
 </section>

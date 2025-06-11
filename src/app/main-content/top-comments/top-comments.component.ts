@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewChecked, AfterViewInit, Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-top-comments',
@@ -9,7 +10,8 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './top-comments.component.html',
   styleUrl: './top-comments.component.scss'
 })
-export class TopCommentsComponent {
+export class TopCommentsComponent implements AfterViewInit, AfterViewChecked {
+  private aosInitialized = false;
   currentComment = 0;
   comments = [
     { key: 'comment1' },
@@ -36,5 +38,16 @@ export class TopCommentsComponent {
 
   lastComment() {
     this.currentComment = (this.currentComment - 1 + this.comments.length) % this.comments.length;
+  }
+
+  ngAfterViewInit() {
+    AOS.init({ duration: 1000, once: true });
+    this.aosInitialized = true;
+  }
+
+  ngAfterViewChecked() {
+    if (this.aosInitialized) {
+      AOS.refresh(); // zwingt AOS, neu generierte DOM-Elemente zu erkennen
+    }
   }
 }

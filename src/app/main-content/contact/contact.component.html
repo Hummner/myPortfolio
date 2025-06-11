@@ -1,25 +1,25 @@
 <section>
     <div class="content">
-        <div class="contact-header">
+        <div data-aos="flip-down" class="contact-header">
             <h1>{{ 'contact.title' | translate }}</h1>
         </div>
         <div class="contact-main">
             <div class="text">
-                <h2>{{ 'contact.heading' | translate }}</h2>
-                <p>{{ 'contact.text1' | translate }}</p>
-                <p [innerHTML]="'contact.text2' | translate"></p>
+                <h2 data-aos="fade-right">{{ 'contact.heading' | translate }}</h2>
+                <p data-aos="fade-right">{{ 'contact.text1' | translate }}</p>
+                <p data-aos="fade-right" [innerHTML]="'contact.text2' | translate"></p>
             </div>
             @if (sentEmail) {
-            <div class="user-feedback">
+            <div data-aos="fade-up" class="user-feedback">
                 <span [innerHTML]="'contact.feedback.sent' | translate" class="sent-email-feedback"></span>
                 <button (click)="newEmail()" class="button-green">{{ "contact.feedback.newEmail" | translate}}</button>
             </div>
             }@else {
             <form class="contact-field" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                 <div class="contact-label">
-                    <label [ngClass]="{'invalid':name.invalid && (name.touched || trySubmit), 'valid': name.valid}"
+                    <label data-aos="fade-left" [ngClass]="{'invalid':name.invalid && (name.touched || trySubmit), 'valid': name.valid}"
                         class="input-label" for="name">
-                        <input [(ngModel)]="contactData.name"
+                        <input [(ngModel)]="contactData.name" #nameInput
                             placeholder="{{ 'contact.placeholders.name' | translate }}" noLeadingWhitespace name="name"
                             minlength="3" type="text" [ngModelOptions]="{ updateOn: 'blur' }" id="name" required
                             #name="ngModel">
@@ -35,7 +35,7 @@
                         }
                     </span>
                 </div>
-                <div class="contact-label">
+                <div data-aos="fade-left" class="contact-label">
                     <label [ngClass]="{'invalid':email.invalid && (email.touched || trySubmit), 'valid': email.valid}"
                         class="input-label" for="email">
                         <input [(ngModel)]="contactData.email" name="email" noLeadingWhitespace
@@ -54,7 +54,7 @@
                         }
                     </span>
                 </div>
-                <div class="contact-label">
+                <div data-aos="fade-left" class="contact-label">
                     <label
                         [ngClass]="{'invalid':message.invalid && (message.touched || trySubmit), 'valid': message.valid}"
                         class="input-label" for="message">
@@ -74,7 +74,7 @@
                         }
                     </span>
                 </div>
-                <div class="privacy-input">
+                <div data-aos="fade-left" class="privacy-input">
                     <div class="custom-checkbox">
                         <label for="checkbox"
                             [ngClass]="{'checkbox': !isChecked, 'checkbox-checked': isChecked}"></label>
@@ -88,7 +88,7 @@
                         {{ "contact.validation.checkboxRequired" | translate}}
                         }</span>
                 </div>
-                <button [ngClass]="{'button-disabled': !contactForm.valid}" class="button-green submit-button">
+                <button data-aos="fade-left" [ngClass]="{'button-disabled': !contactForm.valid}" class="button-green submit-button">
                     {{ "contact.submit" | translate}}
                 </button>
             </form>}
@@ -97,6 +97,6 @@
             <a href="#home"><img class="image-button" src="assets/icons/4. Go up button.png" alt=""></a>
         </div>
     </div>
-    <div class="placeholder"></div>
-    <img class="shadow" src="assets/img/33. Purple shadow Footer.png" alt="">
+    <div data-aos="fade-left" class="placeholder"></div>
+    <img data-aos="fade-right" class="shadow" src="assets/img/33. Purple shadow Footer.png" alt="">
 </section>

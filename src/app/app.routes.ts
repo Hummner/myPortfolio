@@ -5,6 +5,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { WorkInProgressComponent } from './work-in-progress/work-in-progress.component';
 
 
+
 export const routes: Routes = [
     {path: "", component : MainContentComponent},
     {path: "work-in-progress", component: WorkInProgressComponent},

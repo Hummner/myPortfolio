@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, AfterViewChecked } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-about-me',
@@ -8,8 +9,9 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
-export class AboutMeComponent {
+export class AboutMeComponent implements AfterViewInit, AfterViewChecked {
   currentLang = "";
+  private aosInitialized = false;
 
   constructor(private translate: TranslateService) {
     translate.addLangs(['de', 'en']);
@@ -21,8 +23,14 @@ export class AboutMeComponent {
   }
 
 
-  switchLanguage() {
-    const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
-    this.translate.use(newLang);
+  ngAfterViewInit() {
+    AOS.init({ duration: 1000, once: true });
+    this.aosInitialized = true;
+  }
+
+  ngAfterViewChecked() {
+    if (this.aosInitialized) {
+      AOS.refresh();
+    }
   }
 }

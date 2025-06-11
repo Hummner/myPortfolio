@@ -4,9 +4,9 @@
     *ngFor="let key of projectKeys; let i = index"
     [ngClass]="{ reverse: i % 2 !== 0 }">
     <div class="image-section">
-      <img class="works-image" [src]="'assets/img/laptop_' + i + '.png'" alt="">
+      <img data-aos="flip-up" class="works-image" [src]="'assets/img/laptop_' + i + '.png'" alt="">
     </div>
-    <div class="text-section">
+    <div data-aos="fade-right" class="text-section">
       <h2>{{ 'projects.' + key + '.title' | translate }}</h2>
       <h3>{{ 'projects.' + key + '.subtitle' | translate }}</h3>
       <p>{{ 'projects.' + key + '.description' | translate }}</p>

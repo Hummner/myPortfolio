@@ -7,9 +7,19 @@ import { provideHttpClient, HttpClientModule, HttpClient } from '@angular/common
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+
+import {  withInMemoryScrolling } from '@angular/router';
+
+
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideRouter(routes),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',         // kein #scroll
+        scrollPositionRestoration: 'enabled'     // immer nach oben scrollen
+      })
+    ),
     provideHttpClient(),
     importProvidersFrom(
       HttpClientModule,
@@ -27,3 +37,4 @@ export const appConfig: ApplicationConfig = {
 export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+

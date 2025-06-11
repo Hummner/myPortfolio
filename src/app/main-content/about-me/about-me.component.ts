@@ -13,20 +13,12 @@ export class AboutMeComponent implements AfterViewInit, AfterViewChecked {
   currentLang = "";
   private aosInitialized = false;
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-
-    const savedLang = localStorage.getItem('lang');
-    this.currentLang = savedLang ?? 'en';
-    translate.use(this.currentLang);
-  }
-
 
   ngAfterViewInit() {
     AOS.init({ duration: 125, once: true });
     this.aosInitialized = true;
   }
+
 
   ngAfterViewChecked() {
     if (this.aosInitialized) {

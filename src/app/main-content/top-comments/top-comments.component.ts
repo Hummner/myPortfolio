@@ -19,18 +19,6 @@ export class TopCommentsComponent implements AfterViewInit, AfterViewChecked {
     { key: 'comment3' }
   ];
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
-
-  switchLanguage() {
-    const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
-    this.translate.use(newLang);
-  }
-
-
   nextComment() {
     this.currentComment = (this.currentComment + 1) % this.comments.length;
   }
@@ -40,6 +28,7 @@ export class TopCommentsComponent implements AfterViewInit, AfterViewChecked {
     this.currentComment = (this.currentComment - 1 + this.comments.length) % this.comments.length;
   }
 
+
   ngAfterViewInit() {
     AOS.init({ duration: 1000, once: true });
     this.aosInitialized = true;
@@ -47,7 +36,7 @@ export class TopCommentsComponent implements AfterViewInit, AfterViewChecked {
 
   ngAfterViewChecked() {
     if (this.aosInitialized) {
-      AOS.refresh(); // zwingt AOS, neu generierte DOM-Elemente zu erkennen
+      AOS.refresh();
     }
   }
 }

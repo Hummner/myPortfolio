@@ -12,15 +12,4 @@ import { routes } from '../app.routes';
 })
 export class LegalNoticeComponent {
 
-  currentLang = "string"
-
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-
-    const savedLang = localStorage.getItem('lang');
-    this.currentLang = savedLang ?? 'en';
-    translate.use(this.currentLang);
-  }
-
 }

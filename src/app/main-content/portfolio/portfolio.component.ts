@@ -10,21 +10,6 @@ import AOS from 'aos';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent implements OnInit {
+export class PortfolioComponent{
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
-
-    ngOnInit(): void {
-      AOS.init();
-    }
-  
-
-  switchLanguage() {
-    const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
-    this.translate.use(newLang);
-  }
 }

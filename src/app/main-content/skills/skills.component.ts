@@ -14,17 +14,12 @@ export class SkillsComponent implements AfterViewInit, AfterViewChecked {
   showDialog = false;
   private aosInitialized = false;
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
-
   ngAfterViewInit() {
     AOS.init({ duration: 1000, once: true });
     this.aosInitialized = true;
   }
 
+  
   ngAfterViewChecked() {
     if (this.aosInitialized) {
       AOS.refresh();

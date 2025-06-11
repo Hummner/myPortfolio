@@ -42,18 +42,6 @@ export class ContactComponent implements AfterViewInit, AfterViewChecked {
     },
   };
 
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-    translate.use('en');
-  };
-
-
-  switchLanguage() {
-    const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';
-    this.translate.use(newLang);
-  };
-
 
   onSubmit(ngForm: NgForm) {
     this.trySubmit = true;
@@ -113,11 +101,9 @@ export class ContactComponent implements AfterViewInit, AfterViewChecked {
     }
   }
 
-
-
   ngAfterViewChecked() {
     if (this.aosInitialized) {
-      AOS.refresh(); // zwingt AOS, neu generierte DOM-Elemente zu erkennen
+      AOS.refresh();
     }
   }
 }

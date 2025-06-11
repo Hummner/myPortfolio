@@ -88,7 +88,11 @@
             "messageMinlength": "Mindestens 10 Zeichen!",
             "checkboxRequired": "Bitte stimme der Datenschutzerklärung zu."
         },
-        "privacyText": "Ich habe die <a class='privacy' href='/privacy-policy'>Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten gemäß den Bestimmungen zu.",
+        "privacyText": {
+            "text1" : "Ich habe die ",
+            "text2" : " gelesen und stimme der Verarbeitung meiner Daten gemäß den Bestimmungen zu.",
+            "link" : "Datenschutzerklärung"
+        },
         "submit": "Nachricht senden :)",
         "feedback": {
             "sent": "Deine E-Mail wurde erfolgreich versendet.<br>Möchtest du eine weitere schreiben?",

@@ -5,6 +5,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { PortfolioComponent } from "./portfolio/portfolio.component";
 import { TopCommentsComponent } from "./top-comments/top-comments.component";
 import { ContactComponent } from "./contact/contact.component";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-content',
@@ -14,5 +15,4 @@ import { ContactComponent } from "./contact/contact.component";
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
-
 }

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,12 +11,22 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  constructor(private translate: TranslateService) {
-    translate.addLangs(['de', 'en']);
-    translate.setDefaultLang('en');
-    translate.use('en');
-  }
+  currentLang = "";
   
+  constructor(private translate: TranslateService, private router: Router) {
+    const savedLang = localStorage.getItem('lang') ?? 'en';
+    this.currentLang = savedLang;
+    translate.use(savedLang);
+
+    this.router.events.subscribe(() => {
+      const lang = localStorage.getItem('lang') ?? 'en';
+      if (this.currentLang !== lang) {
+        this.currentLang = lang;
+        this.translate.use(lang);
+      }
+    });
+  }
+
 
   switchLanguage() {
     const newLang = this.translate.currentLang === 'de' ? 'en' : 'de';

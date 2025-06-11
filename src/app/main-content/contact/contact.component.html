@@ -74,7 +74,7 @@
                         <input id="checkbox" name="checkbox" #checkbox="ngModel" required [(ngModel)]="isChecked"
                             type="checkbox">
                     </div>
-                    <p [innerHTML]="'contact.privacyText' | translate"></p>
+                    <p>{{ "contact.privacyText.text1" | translate }}<a class='privacy' routerLink='/privacy-policy'>{{ "contact.privacyText.link" | translate }}</a>{{ "contact.privacyText.text2" | translate  }}</p>
                     <span>@if ((checkbox.touched || trySubmit) && checkbox.invalid) {
                         {{ "contact.validation.checkboxRequired" | translate}}
                         }</span>

@@ -17,11 +17,21 @@ export class HeaderComponent {
   currentLang = 'en';
 
   constructor(private translate: TranslateService, private router: Router) {
-    translate.addLangs(['de', 'en']);
-    this.currentLang = 'en';
-    translate.setDefaultLang('en');
-    translate.use('en'); // ← immer EN beim Start
-  }
+  translate.addLangs(['de', 'en']);
+  translate.setDefaultLang('en');
+
+  const savedLang = localStorage.getItem('lang') ?? 'en';
+  this.currentLang = savedLang;
+  translate.use(this.currentLang);
+
+  this.router.events.subscribe(() => {
+    const lang = localStorage.getItem('lang') ?? 'en';
+    if (this.currentLang !== lang) {
+      this.currentLang = lang;
+      this.translate.use(lang);
+    }
+  });
+}
 
 
   burgerOpen() {
@@ -43,7 +53,7 @@ export class HeaderComponent {
         const rect = el.getBoundingClientRect();
         if (rect.top <= 100 && rect.bottom >= 100) {
           this.activeSection = section;
-          return; 
+          return;
         }
       }
     }
@@ -55,5 +65,6 @@ export class HeaderComponent {
   switchLanguage(lang: 'de' | 'en') {
     this.currentLang = lang;
     this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }

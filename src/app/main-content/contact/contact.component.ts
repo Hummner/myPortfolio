@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -55,14 +56,14 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            this.sentEmail = true;
+            
 
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {this.sentEmail = true},
         });
       this.trySubmit = false;
       

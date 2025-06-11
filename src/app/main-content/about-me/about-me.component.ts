@@ -9,10 +9,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
+  currentLang = "";
+
   constructor(private translate: TranslateService) {
     translate.addLangs(['de', 'en']);
     translate.setDefaultLang('en');
-    translate.use('en');
+
+    const savedLang = localStorage.getItem('lang');
+    this.currentLang = savedLang ?? 'en';
+    translate.use(this.currentLang);
   }
 
 

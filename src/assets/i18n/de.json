@@ -34,7 +34,7 @@
         "join": {
             "title": "Join",
             "subtitle": "JavaScript | CSS | HTML",
-            "description": "Taskmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Nutzer und Kategorien zu."
+            "description": "Responsiver Taskmanager im Kanban-Stil mit Drag & Drop, Nutzer- und Kategoriezuteilung. Das Projekt entstand in Teamarbeit. Mein Schwerpunkt lag auf der Entwicklung der Board-Seite mit Drag & Drop-Funktionalität sowie der Add-Task-Seite zum Erstellen und Kategorisieren neuer Aufgaben."
         },
         "sharkie": {
             "title": "Sharkie",
@@ -61,12 +61,12 @@
             "name": "V. Schuster - Team Partner"
         },
         "comment2": {
-            "text": "Michi war ein großartiger Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
+            "text": "Bence war ein großartiger Teamkollege bei DA. Sein positives Engagement und seine Bereitschaft, Verantwortung zu übernehmen, haben wesentlich dazu beigetragen, dass wir unsere Ziele erreicht haben.",
             "name": "E.Eichinger - Team Partner"
         },
         "comment3": {
             "text": "Die Zusammenarbeit mit Bence war eine große Freude. Er weiß, wie man Teammitglieder motiviert und ermutigt, ihr Bestes zu geben, und bringt immer neue Ideen ins Brainstorming ein. Er war stets präsent und ansprechbar, wenn es um das Wohlbefinden der Gruppe ging – und das mit großem Humor.",
-            "name": "I.Nuber - Frontend Engineer"
+            "name": "I.Nuber - Frontend-Entwickler"
         }
     },
     "contact": {

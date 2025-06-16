@@ -34,7 +34,7 @@
         "join": {
             "title": "Join",
             "subtitle": "JavaScript | CSS | HTML",
-            "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+            "description": "Responsive Kanban-style task manager with drag and drop, user and category assignment. This was a team project. I was mainly responsible for developing the board page with drag and drop functionality and the add-task page for creating and categorizing tasks."
         },
         "sharkie": {
             "title": "Sharkie",
@@ -61,7 +61,7 @@
             "name": "V. Schuster - Team Partner"
         },
         "comment2": {
-            "text": "Michi was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
+            "text": "Bence was a top team colleague at DA. His positive commitment and willingness to take on responsibility made a significant contribution to us achieving our goals.",
             "name": "E.Eichinger - Team Partner"
         },
         "comment3": {

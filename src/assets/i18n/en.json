@@ -10,9 +10,9 @@
     },
     "aboutMe": {
         "title": "About me",
-        "intro": "I've been a tech lover since childhood, and coding has always been my dream job. What excites me most about programming is the ability to bring ideas to life and solve real-world problems through technology. My passion for continuous learning and curiosity about how things work drive me to constantly improve my skills and stay up to date with new tools and technologies.",
+        "intro": "I am an aspiring frontend developer with a focus on JavaScript, TypeScript, and Angular, and I’m passionate about creating modern, user-friendly web applications. My strong sense of design comes from my previous work as a photographer, which now helps me develop intuitive and visually appealing user interfaces.",
         "location": "I'm based in Essen, Germany. I'm open to different ways of working, including remote work and relocation, depending on the opportunity and team.",
-        "learning": "I'm always excited to learn new things and gain more experience. In the IT field, it's essential to stay up to date—and that mindset fits me perfectly. I'm open-minded, curious, and always looking for opportunities to grow and improve my skills.",
+        "learning": "Personal and professional growth is very important to me. I’m currently deepening my knowledge in backend development, focusing on Django, SQL, REST APIs, and Docker. This way, I continuously expand my skills to become an even better developer.",
         "problemSolving": "I approach challenges with a mix of logic and creativity. I see obstacles as learning opportunities and stay persistent in finding clean, effective solutions. Collaboration, curiosity, and analytical thinking are key to how I solve problems in coding."
     },
     "skills": {
@@ -65,8 +65,8 @@
             "name": "S. Kälin - Team Partner"
         },
         "comment3": {
-            "text": "It was a great pleasure to work with Bence. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.",
-            "name": "I.Nuber - Frontend Engineer"
+            "text": "Bence hat mit beeindruckender Programmierkompetenz überzeugt und Aufgaben stets schnell sowie smart gelöst. Er war jederzeit hilfsbereit, aufgeschlossen und ein angenehmer Teamplayer. Seine ruhige, motivierte Art hat die Zusammenarbeit spürbar bereichert.",
+            "name": "M. Hiller - Team Partner"
         }
     },
     "contact": {
@@ -87,12 +87,12 @@
             "messageRequired": "Your message is empty.",
             "messageMinlength": "Min. 10 characters!",
             "checkboxRequired": "Please accept the privacy policy.",
-            "noLeadingWhitespace" : "The name must not start with a space."
+            "noLeadingWhitespace": "The name must not start with a space."
         },
         "privacyText": {
-            "text1" : "I've read the ",
-            "text2" : " and agree to the processing of my data as outlined.",
-            "link" : "privacy policy"
+            "text1": "I've read the ",
+            "text2": " and agree to the processing of my data as outlined.",
+            "link": "privacy policy"
         },
         "submit": "Send Message :)",
         "feedback": {
@@ -158,12 +158,11 @@
             "text": "The content and works created by the site operator on these pages are subject to German copyright law. Third-party contributions are marked as such. Duplication, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
         }
     },
-    "footer" : {
+    "footer": {
         "footerLink": "Legal Notice"
     },
-    "workInProg" : {
-        "title" : "Work in progress",
-        "text" : "This project is not yet finished. Development is ongoing, and more features and improvements will follow soon."
+    "workInProg": {
+        "title": "Work in progress",
+        "text": "This project is not yet finished. Development is ongoing, and more features and improvements will follow soon."
     }
-    
 }

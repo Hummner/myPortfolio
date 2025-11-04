@@ -50,10 +50,16 @@
             "title": "Pokédex",
             "subtitle": "JavaScript | HTML | CSS | API",
             "description": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+        },
+        "dabubble": {
+            "title": "DABubble",
+            "subtitle": "Angular | SCSS | Firestore",
+            "description": "Ein Slack-Klon, der in einem dreiköpfigen Team entwickelt wird. Die App bietet Echtzeit-Kommunikation mit Channels, Direktnachrichten und Threads. Nutzer können Emojis verwenden, Nachrichten bearbeiten und alles passiert live über Firestore. Außerdem verfügt das Projekt über eine Authentifizierung mit Login und Registrierung, sodass Benutzer eigene Konten erstellen können. Das Projekt befindet sich noch in Entwicklung, der aktuelle Stand ist jedoch bereits auf GitHub einsehbar."
         }
     },
     "projectsButton": {
-        "button": "Testen"
+        "button": "Testen",
+        "disabledButton" : "Wird entwickelt"
     },
     "comments": {
         "comment1": {
@@ -90,9 +96,9 @@
             "noLeadingWhitespace": "Der Name darf nicht mit einem Leerzeichen beginnen."
         },
         "privacyText": {
-            "text1" : "Ich habe die ",
-            "text2" : " gelesen und stimme der Verarbeitung meiner Daten gemäß den Bestimmungen zu.",
-            "link" : "Datenschutzerklärung"
+            "text1": "Ich habe die ",
+            "text2": " gelesen und stimme der Verarbeitung meiner Daten gemäß den Bestimmungen zu.",
+            "link": "Datenschutzerklärung"
         },
         "submit": "Nachricht senden :)",
         "feedback": {
@@ -158,12 +164,11 @@
             "text": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
         }
     },
-     "footer" : {
+    "footer": {
         "footerLink": "Impressum"
     },
-    "workInProg" : {
-        "title" : "Projekt im Aufbau",
-        "text" : "Dieses Projekt ist noch nicht fertiggestellt. Die Entwicklung ist im Gange und weitere Funktionen sowie Optimierungen werden in Kürze folgen."
+    "workInProg": {
+        "title": "Projekt im Aufbau",
+        "text": "Dieses Projekt ist noch nicht fertiggestellt. Die Entwicklung ist im Gange und weitere Funktionen sowie Optimierungen werden in Kürze folgen."
     }
-    
 }

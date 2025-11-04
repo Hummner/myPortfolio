@@ -50,10 +50,16 @@
             "title": "Pokédex",
             "subtitle": "JavaScript | HTML | CSS | API",
             "description": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+        },
+        "dabubble": {
+            "title": "DABubble",
+            "subtitle": "Angular | SCSS | Firestore",
+            "description": "A Slack clone developed in a three-person team. The app enables real-time communication with channels, direct messages, and threads. Users can use emojis, edit messages, and everything updates live via Firestore. It also includes authentication with login and registration, allowing users to create their own accounts. The project is still in development, but the current progress can already be viewed on GitHub."
         }
     },
     "projectsButton": {
-        "button": "Live Test"
+        "button": "Live Test",
+        "disabledButton" : "In Development"
     },
     "comments": {
         "comment1": {

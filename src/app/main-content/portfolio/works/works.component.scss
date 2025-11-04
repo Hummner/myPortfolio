@@ -81,6 +81,12 @@ section {
     width: 100%;
 }
 
+.button-disabled {
+    background-color: #B6B6B6 !important;
+    cursor: not-allowed !important;
+    transform: unset !important;
+}
+
 
 @media (max-width: 1200px) {
     .works-image {

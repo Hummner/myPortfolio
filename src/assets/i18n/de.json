@@ -52,7 +52,7 @@
             "description": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
         },
         "dabubble": {
-            "title": "DABubble (vsl. Release Ende 2025)",
+            "title": "DABubble (vsl. Release Ende 2025 – Alpha-Version jetzt testbar)",
             "subtitle": "Angular | SCSS | Firestore",
             "description": "Ein Slack-Klon, der in einem dreiköpfigen Team entwickelt wird. Die App bietet Echtzeit-Kommunikation mit Channels, Direktnachrichten und Threads. Nutzer können Emojis verwenden, Nachrichten bearbeiten und alles passiert live über Firestore. Außerdem verfügt das Projekt über eine Authentifizierung mit Login und Registrierung, sodass Benutzer eigene Konten erstellen können. Das Projekt befindet sich noch in Entwicklung, der aktuelle Stand ist jedoch bereits auf GitHub einsehbar."
         },

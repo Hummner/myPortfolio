@@ -11,8 +11,8 @@
       <h3>{{ 'projects.' + key + '.subtitle' | translate }}</h3>
       <p>{{ 'projects.' + key + '.description' | translate }}</p>
       <div class="works-buttons">
-        <a *ngIf="projectLinks[i] !== 'noLink'" target="_blank" href="{{ projectLinks[i]}}" class="button-purple">{{ 'projectsButton.button' | translate }}</a>
-        <button *ngIf="projectLinks[i] == 'noLink'" disabled target="_blank" class="button-purple button-disabled">{{ 'projectsButton.disabledButton' | translate }}</button>
+        <a *ngIf="projectLinks[i] !== 'noLink' && projectLinks[i] !== 'inProg'" target="_blank" href="{{ projectLinks[i]}}" class="button-purple">{{ 'projectsButton.button' | translate }}</a>
+        <button *ngIf="projectLinks[i] == 'inProg'" disabled target="_blank" class="button-purple button-disabled">{{ 'projectsButton.disabledButton' | translate }}</button>
         <a target="_blank" href="{{ githubLinks[i]}}" class="button-transparent">Github</a>
       </div>
     </div>

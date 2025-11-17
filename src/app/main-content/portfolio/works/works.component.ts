@@ -12,9 +12,9 @@ import { AfterViewChecked } from '@angular/core';
   styleUrl: './works.component.scss'
 })
 export class WorksComponent implements AfterViewInit, AfterViewChecked {
-  projectKeys = ['join', 'sharkie', 'dabubble'];
-  projectLinks = ['http://join.bence-cservenyak.com', 'http://sharkie.bence-cservenyak.com', 'noLink']
-  githubLinks = ['https://github.com/Hummner/join-448', 'https://github.com/Hummner/sharkie', 'https://github.com/Hummner/DABubble']
+  projectKeys = ['join', 'sharkie', 'kanMind', 'dabubble'];
+  projectLinks = ['http://join.bence-cservenyak.com', 'http://sharkie.bence-cservenyak.com', 'noLink','inProg']
+  githubLinks = ['https://github.com/Hummner/join-448', 'https://github.com/Hummner/sharkie', 'https://github.com/Hummner/KanMind', 'https://github.com/Hummner/DABubble']
   private aosInitialized = false;
 
 

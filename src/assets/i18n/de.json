@@ -10,7 +10,7 @@
     },
     "aboutMe": {
         "title": "Über mich",
-        "intro": "Ich bin Frontend-Entwickler mit den Schwerpunkten JavaScript, TypeScript und Angular und begeistere mich für moderne, benutzerfreundliche Webanwendungen. Mein ausgeprägtes Gespür für Design verdanke ich meiner früheren Tätigkeit als Fotograf -> heute hilft es mir dabei, intuitive und ansprechende Benutzeroberflächen zu entwickeln.",
+        "intro": "Ich bin Frontend-Entwickler mit den Schwerpunkten JavaScript, TypeScript und Angular und begeistere mich für moderne, benutzerfreundliche Webanwendungen. Mein ausgeprägtes Gespür für Design verdanke ich meiner früheren Tätigkeit als Fotograf und heute hilft es mir dabei, intuitive und ansprechende Benutzeroberflächen zu entwickeln. Aktuell bilde ich mich intensiv im Backendbereich weiter, insbesondere mit Python, Django, SQL und Docker, um mein Profil als Entwickler ganzheitlich zu erweitern.",
         "location": "Ich lebe in Essen, Deutschland. Ich bin offen für verschiedene Arbeitsmodelle – ob remote oder mit Umzug – je nach Team und Möglichkeit.",
         "learning": "Mir ist persönliche und fachliche Weiterentwicklung sehr wichtig. Momentan vertiefe ich mein Wissen im Backend-Bereich und beschäftige mich unter anderem mit Django, SQL, REST-APIs und Docker. So baue ich mein Know-how kontinuierlich aus, um ein noch besserer Entwickler zu werden.",
         "problemSolving": "Herausforderungen begegne ich mit einer Mischung aus Logik und Kreativität. Ich sehe Hürden als Lernchance und bleibe hartnäckig auf der Suche nach klaren, effektiven Lösungen. Zusammenarbeit, Neugier und analytisches Denken sind zentrale Bestandteile meiner Herangehensweise beim Coden."
@@ -52,7 +52,7 @@
             "description": "Basierend auf der PokéAPI – eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
         },
         "dabubble": {
-            "title": "DABubble (vsl. Release Ende 2025 – Alpha-Version jetzt testbar)",
+            "title": "DABubble",
             "subtitle": "Angular | SCSS | Firestore",
             "description": "Ein Slack-Klon, der in einem dreiköpfigen Team entwickelt wird. Die App bietet Echtzeit-Kommunikation mit Channels, Direktnachrichten und Threads. Nutzer können Emojis verwenden, Nachrichten bearbeiten und alles passiert live über Firestore. Außerdem verfügt das Projekt über eine Authentifizierung mit Login und Registrierung, sodass Benutzer eigene Konten erstellen können. Das Projekt befindet sich noch in Entwicklung, der aktuelle Stand ist jedoch bereits auf GitHub einsehbar."
         },

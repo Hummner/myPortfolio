@@ -56,15 +56,20 @@
             "subtitle": "Angular | SCSS | Firestore",
             "description": "Ein Slack-Klon, der in einem dreiköpfigen Team entwickelt wird. Die App bietet Echtzeit-Kommunikation mit Channels, Direktnachrichten und Threads. Nutzer können Emojis verwenden, Nachrichten bearbeiten und alles passiert live über Firestore. Außerdem verfügt das Projekt über eine Authentifizierung mit Login und Registrierung, sodass Benutzer eigene Konten erstellen können. Das Projekt befindet sich noch in Entwicklung, der aktuelle Stand ist jedoch bereits auf GitHub einsehbar."
         },
-        "kanMind": {
-            "title": "KanMind (Backend)",
+        "coderr": {
+            "title": "Coderr (Backend)",
             "subtitle": "Python | Django | Django REST Framework | REST API",
-            "description": "Ein REST-API-Backend für eine ToDo-App mit Django und DRF. Bietet CRUD-Endpunkte für Aufgaben und Benutzerverwaltung. Enthält Token-Authentifizierung sowie fein granulare Permissions für geschützte Operationen. Die DRF-browsable API erleichtert Entwicklung und Tests. Weitere Details, Endpunktübersicht und Setup-Anleitung findet man im README."
+            "description": "Ein REST-API-Backend für eine Freelancer-Plattform, entwickelt mit Django und dem Django REST Framework. Es ermöglicht Benutzerregistrierung, Profilverwaltung sowie die Verwaltung von Projekten zwischen Auftraggebern und Freelancern. Die API unterstützt CRUD-Operationen, rollenbasierte Zugriffskontrollen und eine sichere tokenbasierte Authentifizierung. Die strukturierte API von DRF erleichtern Entwicklung, Tests und die spätere Frontend-Integration."
+        },
+        "videoflix": {
+            "title": "Videoflix (Backend)",
+            "subtitle": "Python | Django | Django REST Framework | REST API | JWT",
+            "description": "Ein REST-API-Backend für eine Video-Streaming-Plattform, entwickelt mit Django und dem Django REST Framework. Es ermöglicht Benutzerregistrierung mit Aktivierungscode, Passwort-Zurücksetzung sowie eine sichere Authentifizierung mittels Simple JWT über Cookies. Videos können ausschließlich über das Admin-Panel hochgeladen werden und werden anschließend automatisch verarbeitet, inklusive Rendering in mehreren Auflösungen und Generierung von Thumbnails. Die API stellt strukturierte Endpunkte für Videoabruf und Benutzerverwaltung bereit und ist für eine effiziente Frontend-Integration ausgelegt."
         }
     },
     "projectsButton": {
         "button": "Testen",
-        "disabledButton": "in Deployment"
+        "disabledButton": "Deploying…"
     },
     "comments": {
         "comment1": {

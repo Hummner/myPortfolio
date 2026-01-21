@@ -56,15 +56,20 @@
             "subtitle": "Angular | SCSS | Firestore",
             "description": "A Slack clone developed in a three-person team. The app enables real-time communication with channels, direct messages, and threads. Users can use emojis, edit messages, and everything updates live via Firestore. It also includes authentication with login and registration, allowing users to create their own accounts. The project is still in development, but the current progress can already be viewed on GitHub."
         },
-        "kanMind": {
-            "title": "KanMind (Backend)",
+        "coderr": {
+            "title": "Coderr (Backend)",
             "subtitle": "Python | Django | Django REST Framework | REST API",
-            "description": "A REST API backend for a ToDo app built with Django and DRF. It provides CRUD endpoints for tasks and user management. Includes token-based authentication and fine-grained permissions for protected operations. The DRF browsable API makes development and testing easier. More details, endpoint documentation, and setup instructions can be found in the README."
+            "description": "A REST API backend for a freelancer platform built with Django and DRF. It enables user registration, profile management, and project listings between clients and freelancers. The API supports CRUD operations, role-based access control, and secure token-based authentication. Structured endpoints simplify development, testing, and future frontend integration. Further details and setup instructions are available in the README."
+        },
+        "videoflix": {
+            "title": "Videoflix (Backend)",
+            "subtitle": "Python | Django | Django REST Framework | REST API | JWT",
+            "description": "A REST API backend for a video streaming platform built with Django and Django REST Framework. It supports user registration with activation codes, password reset functionality, and secure authentication using Simple JWT via cookies. Videos can only be uploaded through the admin panel and are automatically processed, including rendering in multiple resolutions and thumbnail generation. The API provides structured endpoints for video access and user management and is designed for efficient frontend integration."
         }
     },
     "projectsButton": {
         "button": "Live Test",
-        "disabledButton": "in Deployment"
+        "disabledButton": "Deploying…"
     },
     "comments": {
         "comment1": {

@@ -64,7 +64,7 @@
     },
     "projectsButton": {
         "button": "Live Test",
-        "disabledButton": "In Development"
+        "disabledButton": "in Deployment"
     },
     "comments": {
         "comment1": {

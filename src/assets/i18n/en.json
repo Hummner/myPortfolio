@@ -10,7 +10,7 @@
     },
     "aboutMe": {
         "title": "About me",
-        "intro": "I am a frontend developer specializing in JavaScript, TypeScript and Angular, and I am passionate about creating modern and user friendly web applications. I owe my strong sense of design to my previous work as a photographer and today it helps me build intuitive and visually appealing user interfaces. I am currently expanding my skills in backend development, focusing on Python, Django, SQL and Docker, to broaden my overall developer profile.",
+        "intro": "I am a full-stack developer specializing in JavaScript, Angular, Python, and Django. I am passionate about modern, user-friendly web applications. Thanks to my previous work as a photographer, I have a keen sense of design, which helps me develop intuitive and appealing user interfaces. I am currently working on volunteer projects to deepen my knowledge.",
         "location": "I'm based in Essen, Germany. I'm open to different ways of working, including remote work and relocation, depending on the opportunity and team.",
         "learning": "Personal and professional growth is very important to me. I’m currently deepening my knowledge in backend development, focusing on Django, SQL, REST APIs, and Docker. This way, I continuously expand my skills to become an even better developer.",
         "problemSolving": "I approach challenges with a mix of logic and creativity. I see obstacles as learning opportunities and stay persistent in finding clean, effective solutions. Collaboration, curiosity, and analytical thinking are key to how I solve problems in coding."
